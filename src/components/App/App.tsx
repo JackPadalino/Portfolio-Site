@@ -1,12 +1,17 @@
 import React from "react";
-import Nav from "../Nav/Nav";
-import Router from "../Router/Router";
+import { Nav, Router, Home, About, Projects, Resume, Contact } from "..";
+import "./style.css";
 
 const App = () => {
   return (
     <>
       <Nav />
-      <Router />
+      {/* <Router /> */}
+      <Home />
+      <About />
+      <Projects />
+      <Resume />
+      <Contact />
     </>
   );
 };
