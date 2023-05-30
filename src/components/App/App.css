@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+#app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+#nav-container {
+  height: 50px;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  background-color: white;
+}

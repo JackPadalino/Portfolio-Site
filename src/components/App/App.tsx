@@ -1,18 +1,47 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Nav, Router, Home, About, Projects, Resume, Contact } from "..";
-import "./style.css";
+import "./App.css";
 
 const App = () => {
+  // setting up variables and functions for sticky nav on scroll
+  const navRef = useRef<HTMLDivElement>(null);
+  const homeRef = useRef<HTMLDivElement>(null);
+  const [navVisible, setNavVisible] = useState<boolean>(false);
+
+  const stickyNavCallback = (entries: IntersectionObserverEntry[]) => {
+    const entry = entries[0];
+    setNavVisible(entry.isIntersecting);
+    if (!navVisible) navRef.current?.classList.add("sticky");
+    else navRef.current?.classList.remove("sticky");
+  };
+
+  const navOptions = {
+    root: null,
+    threshold: 0.1,
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(stickyNavCallback, navOptions);
+    if (homeRef.current) {
+      observer.observe(homeRef.current as Element);
+    }
+  }, [navVisible]);
+
   return (
-    <>
-      <Nav />
-      {/* <Router /> */}
-      <Home />
-      <About />
-      <Projects />
-      <Resume />
-      <Contact />
-    </>
+    <div id="app-container">
+      <div ref={navRef} id="nav-container">
+        <Nav />
+      </div>
+      <div id="component-container">
+        <div ref={homeRef} id="home-component-container">
+          <Home />
+        </div>
+        <About />
+        <Projects />
+        <Resume />
+        <Contact />
+      </div>
+    </div>
   );
 };
 
