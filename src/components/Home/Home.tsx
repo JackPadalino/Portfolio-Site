@@ -1,11 +1,11 @@
 import React from "react";
-import "./style.css";
+import "./Home.css";
 
 const Home = () => {
   return (
-    <>
+    <div id="home-container">
       <h1>Home</h1>
-    </>
+    </div>
   );
 };
 
