@@ -11,13 +11,16 @@ const App = () => {
   const stickyNavCallback = (entries: IntersectionObserverEntry[]) => {
     const entry = entries[0];
     setNavVisible(entry.isIntersecting);
-    if (!navVisible) navRef.current?.classList.add("sticky");
-    else navRef.current?.classList.remove("sticky");
+    if (!navVisible) {
+      navRef.current?.classList.add("nav-visible");
+    } else {
+      navRef.current?.classList.remove("nav-visible");
+    }
   };
 
   const navOptions = {
     root: null,
-    threshold: 0.1,
+    threshold: 0.05,
   };
 
   useEffect(() => {
@@ -29,7 +32,7 @@ const App = () => {
 
   return (
     <div id="app-container">
-      <div ref={navRef} id="nav-container">
+      <div ref={navRef} id="nav-container" className="nav-invisible">
         <Nav />
       </div>
       <div id="component-container">
