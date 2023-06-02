@@ -20,7 +20,7 @@ const App = () => {
 
   const navOptions = {
     root: null,
-    threshold: 0.05,
+    threshold: 0,
   };
 
   useEffect(() => {
