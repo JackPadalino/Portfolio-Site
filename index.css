@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Airstream";
+  src: local("Airstream"), url("./fonts/Airstream-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
