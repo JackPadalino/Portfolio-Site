@@ -2,3 +2,19 @@
   height: 100vh;
   background-color: lightgrey;
 }
+
+#home-name {
+  font-family: Airstream;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: "Airstream";
+  src: local("Airstream"), url("./Airstream-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

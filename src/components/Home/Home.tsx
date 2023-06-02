@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div id="home-container">
       <Banner />
+      <h1 id="home-name">Jack Padalino</h1>
     </div>
   );
 };
