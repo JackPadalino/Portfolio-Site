@@ -1,4 +1,3 @@
-import React from "react";
 import "./Home.css";
 import { ReactComponent as Banner } from "./banner.svg";
 

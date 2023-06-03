@@ -1,19 +1,19 @@
-import React, { useState, useRef, useEffect, MouseEvent } from "react";
+//import { MouseEvent } from "react";
 import { Link } from "react-router-dom";
-import { useAppSelector, useAppDispatch } from "../../store/hooks";
-import { setNinetiesMode } from "../../store/viewSlice";
+//import { useAppSelector, useAppDispatch } from "../../store/hooks";
+//import { setNinetiesMode } from "../../store/viewSlice";
 import "./Nav.css";
 
 const Nav = () => {
-  const dispatch = useAppDispatch();
-  const ninetiesMode = useAppSelector((state) => state.view.ninetiesMode);
+  //const dispatch = useAppDispatch();
+  //const ninetiesMode = useAppSelector((state) => state.view.ninetiesMode);
 
   // setting up intersection observer API for sticky nav
 
-  const handleViewChange = (e: MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    dispatch(setNinetiesMode(true));
-  };
+  //   const handleViewChange = (e: MouseEvent<HTMLButtonElement>) => {
+  //     e.preventDefault();
+  //     dispatch(setNinetiesMode(true));
+  //   };
 
   return (
     <div>

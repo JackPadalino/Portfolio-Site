@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect } from "react";
-import { Nav, Router, Home, About, Projects, Resume, Contact } from "..";
+import { useRef, useState, useEffect } from "react";
+import { Nav, Home, About, Projects, Resume, Contact } from "..";
 import "./App.css";
 
 const App = () => {
