@@ -3,18 +3,25 @@
   background-color: lightgrey;
 }
 
-#home-name {
-  font-family: Airstream;
-  font-size: 100px;
+#home-info {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
 }
 
-@font-face {
-  font-family: "Airstream";
-  src: local("Airstream"), url("./Airstream-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.home-info {
+  text-align: center;
+}
+
+#home-name {
+  font-family: Hastag;
+  letter-spacing: 0.06em;
+  font-size: 125px;
+}
+
+#home-title {
+  font-family: Airstream;
+  font-size: 50px;
 }
