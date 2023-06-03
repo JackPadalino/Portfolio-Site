@@ -25,10 +25,26 @@
 
 @font-face {
   font-family: "Goldsaber";
-  src: local("Goldsaber"), url("./fonts/Goldsaber.otf") format("otf");
+  src: local("Goldsaber"), url("./fonts/Goldsaber.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Wabene";
   src: local("Wabene"), url("./fonts/Wabene.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bencolen-Vintage";
+  src: local("Bencolen-Vintage"),
+    url("./fonts/Bencolen-Vintage.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Dymaxion";
+  src: local("Dymaxion"), url("./fonts/Dymaxion.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fashion";
+  src: local("Fashion"), url("./fonts/Fashion.TTF") format("truetype");
 }
