@@ -17,3 +17,18 @@
   font-family: "Hastag";
   src: local("Hastag"), url("./fonts/Hastag.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Avaneonz";
+  src: local("Avaneonz"), url("./fonts/Avaneonz.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Goldsaber";
+  src: local("Goldsaber"), url("./fonts/Goldsaber.otf") format("otf");
+}
+
+@font-face {
+  font-family: "Wabene";
+  src: local("Wabene"), url("./fonts/Wabene.ttf") format("truetype");
+}
