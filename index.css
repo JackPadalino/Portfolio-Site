@@ -34,9 +34,9 @@
 }
 
 @font-face {
-  font-family: "Bencolen-Vintage";
-  src: local("Bencolen-Vintage"),
-    url("./fonts/Bencolen-Vintage.otf") format("opentype");
+  font-family: "Bencolene-Vintage";
+  src: local("Bencolene-Vintage"),
+    url("./fonts/Bencolene-Vintage.ttf") format("truetype");
 }
 
 @font-face {
@@ -46,5 +46,5 @@
 
 @font-face {
   font-family: "Fashion";
-  src: local("Fashion"), url("./fonts/Fashion.TTF") format("truetype");
+  src: local("Fashion"), url("./fonts/FASHIONV.ttf") format("truetype");
 }
