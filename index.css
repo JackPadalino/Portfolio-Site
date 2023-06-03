@@ -1,6 +1,19 @@
 @font-face {
   font-family: "Airstream";
-  src: local("Airstream"), url("./fonts/Airstream-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  src: local("Airstream"), url("./fonts/Airstream.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mollie";
+  src: local("Mollie"), url("./fonts/Mollie.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ThickDeco";
+  src: local("ThickDeco"), url("./fonts/ThickDeco.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Hastag";
+  src: local("Hastag"), url("./fonts/Hastag.woff") format("woff");
 }
