@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: "Goldsaber";
-  src: local("Goldsaber"), url("./fonts/Goldsaber.otf") format("opentype");
+  src: local("Goldsaber"), url("./fonts/Goldsaber.ttf") format("opentype");
 }
 
 @font-face {
@@ -47,4 +47,19 @@
 @font-face {
   font-family: "Fashion";
   src: local("Fashion"), url("./fonts/FASHIONV.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Maraton";
+  src: local("Maraton"), url("./fonts/Maraton.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fungus";
+  src: local("Fungus"), url("./fonts/Fungus.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Wetware";
+  src: local("Wetware"), url("./fonts/Wetware.ttf") format("truetype");
 }
