@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import viewReducer from "./viewSlice";
+import navReducer from "./navSlice";
 
 const store = configureStore({
   reducer: {
     view: viewReducer,
+    nav: navReducer,
   },
 });
 
