@@ -19,8 +19,8 @@
 }
 
 @font-face {
-  font-family: "Avaneonz";
-  src: local("Avaneonz"), url("./fonts/Avaneonz.ttf") format("truetype");
+  font-family: "Ava";
+  src: local("Ava"), url("./fonts/Avaneonz.ttf") format("truetype");
 }
 
 @font-face {
@@ -62,4 +62,9 @@
 @font-face {
   font-family: "Wetware";
   src: local("Wetware"), url("./fonts/Wetware.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Wagoon";
+  src: local("Wagoon"), url("./fonts/WagoonBoldInline.ttf") format("truetype");
 }

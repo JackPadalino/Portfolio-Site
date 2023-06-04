@@ -16,14 +16,14 @@
 }
 
 #home-name {
-  font-family: Wetware;
+  font-family: ThickDeco;
   letter-spacing: 0.06em;
-  font-size: 125px;
+  font-size: 110px;
 }
 
 #home-title {
-  font-family: Maraton;
-  font-size: 25px;
+  font-family: Airstream;
+  font-size: 50px;
 }
 
 /* @media only screen and (max-width: 600px) {
