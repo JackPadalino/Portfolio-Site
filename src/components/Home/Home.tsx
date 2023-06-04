@@ -6,9 +6,9 @@ const Home = () => {
     <div id="home-container">
       <Banner />
       <div id="home-info">
-        <h1 className="home-info" id="home-name">
+        <p className="home-info" id="home-name">
           Jack Padalino
-        </h1>
+        </p>
         <p className="home-info" id="home-title">
           Full-Stack Developer
         </p>

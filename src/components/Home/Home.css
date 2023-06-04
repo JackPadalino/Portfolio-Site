@@ -1,6 +1,6 @@
 #home-container {
   height: 100vh;
-  background-color: lightgrey;
+  background-color: #ebd5b8;
 }
 
 #home-info {
@@ -16,9 +16,8 @@
 }
 
 #home-name {
-  font-family: ThickDeco;
-  letter-spacing: 0.06em;
-  font-size: 110px;
+  font-family: Wagoon;
+  font-size: 120px;
 }
 
 #home-title {
