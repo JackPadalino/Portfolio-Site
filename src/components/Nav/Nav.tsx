@@ -6,10 +6,7 @@ const Nav = () => {
   const navVisible = useAppSelector((state) => state.nav.navVisible);
 
   return (
-    <div
-      id="nav-container"
-      className={navVisible ? "nav-visible" : "nav-invisible"}
-    >
+    <div id="nav-container" className={navVisible ? "" : "nav-invisible"}>
       <Link className="nav-link" to="/">
         Home
       </Link>

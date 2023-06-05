@@ -1,16 +1,11 @@
 #nav-container {
+  position: fixed;
+  background-color: white;
   height: 50px;
   width: 100%;
-  margin: 0px;
   border-bottom: 1px solid lightgrey;
 }
 
 .nav-invisible {
   display: none;
-}
-
-.nav-visible {
-  display: block;
-  position: fixed;
-  background-color: white;
 }
