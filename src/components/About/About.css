@@ -3,6 +3,11 @@
   background-color: #f8cb2e;
 }
 
+#graphics-container {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 #halfMoon {
   height: 150px;
   width: 150px;
