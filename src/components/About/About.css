@@ -1,11 +1,15 @@
 #about-container {
   height: 100vh;
+  display: flex;
 }
 
 #about-me-container {
   width: 50%;
   height: 100%;
   background-color: #f8cb2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #graphics-container {
@@ -14,4 +18,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#helloSign {
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #about-me-container {
+    width: 100%;
+  }
+
+  #graphics-container {
+    display: none;
+  }
 }
