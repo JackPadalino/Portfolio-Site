@@ -1,15 +1,18 @@
 import "./About.css";
-import halfMoon from "../../../graphics/50satomic-08.svg";
-import starBurst from "../../../graphics/50satomic-04.svg";
+import halfMoon from "./halfMoon.svg";
+import trapezoid from "./trapezoid.svg";
+import helloSign from "../../../graphics/helloSign.png";
+import me from "../../../pictures/me.jpg";
 
 const About = () => {
   return (
     <div id="about-container">
-      {/* <h1>About</h1> */}
+      <div id="about-me-container">
+        {/* <img src={me} /> */}
+        <h1>Hey!</h1>
+      </div>
       <div id="graphics-container">
-        <img src={starBurst} id="starburst1" />
-        <img src={halfMoon} id="halfMoon" />
-        <img src={starBurst} id="starburst2" />
+        <img src={helloSign} id="helloSign" />
       </div>
     </div>
   );

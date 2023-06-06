@@ -1,6 +1,6 @@
 #about-container {
   height: 100vh;
-  background-color: #f8cb2e;
+  /* background-color: #f8cb2e; */
 }
 
 #graphics-container {
@@ -24,4 +24,8 @@
   height: 50px;
   width: 50px;
   position: absolute;
+}
+
+#trapezoid polygon {
+  color: red;
 }
