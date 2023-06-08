@@ -1,36 +1,56 @@
-#about-container {
+#aboutMainContainer {
   height: 100vh;
   display: flex;
 }
 
-#about-me-container {
+.aboutContainer {
   width: 50%;
   height: 100%;
-  background-color: #f8cb2e;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#graphics-container {
-  width: 50%;
+#aboutBackground {
+  width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  opacity: 0.3;
 }
 
 #helloSign {
-  width: 90%;
-  height: 90%;
+  height: 80%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+}
+
+.startLeft {
+  opacity: 0;
+}
+
+.slideRight {
+  animation-name: slideRightAnimation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideRightAnimation {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  #about-me-container {
+  #right-container {
     width: 100%;
   }
 
-  #graphics-container {
+  #left-container {
     display: none;
   }
 }

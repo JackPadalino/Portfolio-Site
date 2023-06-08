@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { useAppDispatch } from "../../store/hooks";
 import { setNavVisible } from "../../store/navSlice";
-import { ReactComponent as Banner } from "./banner.svg";
+import { ReactComponent as Banner } from "../../../images/graphics/banner.svg";
 import "./Home.css";
 
 const Home = () => {
