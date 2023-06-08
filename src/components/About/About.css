@@ -53,4 +53,8 @@
   #left-container {
     display: none;
   }
+
+  #helloSign {
+    display: none;
+  }
 }
