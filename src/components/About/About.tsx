@@ -1,5 +1,5 @@
 import "./About.css";
-import helloSign from "../../../images/graphics/helloSign.png";
+import helloSign from "../../../images/graphics/helloSign1.png";
 
 const About = () => {
   return (
