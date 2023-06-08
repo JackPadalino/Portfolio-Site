@@ -21,12 +21,12 @@ const Home = () => {
     threshold: 0,
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(stickyNavCallback, navOptions);
-    if (homeRef.current) {
-      observer.observe(homeRef.current as Element);
-    }
-  }, [stickyNavCallback]);
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(stickyNavCallback, navOptions);
+  //   if (homeRef.current) {
+  //     observer.observe(homeRef.current as Element);
+  //   }
+  // }, [stickyNavCallback]);
 
   return (
     <div ref={homeRef} id="home-container">
