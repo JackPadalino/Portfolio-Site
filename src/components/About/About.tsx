@@ -1,12 +1,16 @@
 import "./About.css";
-import helloSign from "../../../images/graphics/helloSign1.png";
+import helloSign from "../../../images/graphics/helloSign2.png";
+import background from "../../../images/graphics/background2.jpg";
 
 const About = () => {
   return (
-    <div id="about-container">
-      <div id="about-me-container"></div>
-      <div id="graphics-container">
+    <div id="about-main-container">
+      <div className="about-container" id="left-container">
         <img src={helloSign} id="helloSign" />
+        <img src={background} id="about-background" />
+      </div>
+      <div className="about-container" id="right-container">
+        <img src={background} id="about-background" />
       </div>
     </div>
   );
