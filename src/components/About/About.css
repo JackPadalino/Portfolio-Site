@@ -5,7 +5,7 @@
   background-image: url("../../../images/graphics/background2.jpg");
   background-repeat: repeat;
   background-blend-mode: overlay;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #me {
@@ -131,7 +131,6 @@
   }
 
   #me {
-    border-radius: 50%;
     width: 200px;
     height: 200px;
   }
