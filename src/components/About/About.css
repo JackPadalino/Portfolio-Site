@@ -4,7 +4,7 @@
   background-image: url("../../../images/graphics/background2.jpg");
   background-repeat: repeat;
   background-blend-mode: overlay;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: #ffffff80;
 }
 
 /*~~~~~CSS for desktop view~~~~~*/
@@ -81,15 +81,6 @@
 
 /*~~~~~CSS for landscape mobile view~~~~~*/
 @media only screen and (min-width: 600px) and (max-width: 900px) {
-  #aboutMainContainer {
-    height: 100vh;
-    display: flex;
-    background-image: url("../../../images/graphics/background2.jpg");
-    background-repeat: repeat;
-    background-blend-mode: overlay;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
   #leftContainer {
     width: 50%;
     height: 100%;
@@ -120,15 +111,6 @@
 
 /*~~~~~CSS for portrait mobile view~~~~~*/
 @media only screen and (max-width: 600px) {
-  #aboutMainContainer {
-    height: 100vh;
-    display: flex;
-    background-image: url("../../../images/graphics/background2.jpg");
-    background-repeat: repeat;
-    background-blend-mode: overlay;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
   #left-container {
     display: none;
   }
