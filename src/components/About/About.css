@@ -136,11 +136,16 @@
 
 /*~~~~~CSS for portrait mobile view~~~~~*/
 @media only screen and (max-width: 600px) {
-  #left-container {
-    display: none;
+  #aboutMainContainer {
+    height: 100vh;
+    display: flex;
+    background-image: url("../../../images/graphics/background2.jpg");
+    background-repeat: repeat;
+    background-blend-mode: overlay;
+    background-color: rgb(255, 255, 255, 0.5);
   }
 
-  #helloSign {
+  #left-container {
     display: none;
   }
 
@@ -152,9 +157,24 @@
     align-items: center;
   }
 
+  #helloSign {
+    display: none;
+  }
+
   #me {
+    border-radius: 50%;
     width: 200px;
     height: 200px;
+  }
+
+  .picStart {
+    opacity: 0;
+  }
+
+  .picTranslate {
+    animation-name: picTranslateAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
   }
 
   @keyframes picTranslateAnimation {
