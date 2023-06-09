@@ -34,14 +34,9 @@
 }
 
 @font-face {
-  font-family: "Bencolene-Vintage";
-  src: local("Bencolene-Vintage"),
+  font-family: "Bencolene";
+  src: local("Bencolene"),
     url("./fonts/Bencolene-Vintage.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Dymaxion";
-  src: local("Dymaxion"), url("./fonts/Dymaxion.ttf") format("truetype");
 }
 
 @font-face {

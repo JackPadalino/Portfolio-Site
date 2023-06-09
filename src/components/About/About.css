@@ -21,6 +21,18 @@
   background-color: #ffffff80;
 }
 
+#profileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#aboutMe {
+  font-family: Wagoon;
+}
+
 #me {
   border-radius: 50%;
 }
@@ -63,7 +75,13 @@
 
   #me {
     height: 50%;
-    height: 50%;
+    width: 50%;
+  }
+
+  #aboutMe {
+    width: 75%;
+    font-size: 30px;
+    text-indent: 50px;
   }
 
   .picStart {
@@ -105,7 +123,13 @@
 
   #me {
     height: 50%;
-    height: 50%;
+    width: 50%;
+  }
+
+  #aboutMe {
+    width: 80%;
+    font-size: 15px;
+    text-indent: 50px;
   }
 }
 
@@ -124,7 +148,13 @@
   }
 
   #me {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
+  }
+
+  #aboutMe {
+    width: 80%;
+    font-size: 20px;
+    text-indent: 50px;
   }
 }
