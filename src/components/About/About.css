@@ -1,14 +1,14 @@
+#aboutMainContainer {
+  height: 100vh;
+  display: flex;
+  background-image: url("../../../images/graphics/background2.jpg");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(255, 255, 255, .5);
+}
+
 /*~~~~~CSS for desktop view~~~~~*/
 @media only screen and (min-width: 900px) {
-  #aboutMainContainer {
-    height: 100vh;
-    display: flex;
-    background-image: url("../../../images/graphics/background2.jpg");
-    background-repeat: repeat;
-    background-blend-mode: overlay;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-
   #leftContainer {
     width: 50%;
     height: 100%;
