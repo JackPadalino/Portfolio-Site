@@ -1,3 +1,4 @@
+/*~~~~~CSS for all screens~~~~~*/
 #aboutMainContainer {
   height: 100vh;
   display: flex;
@@ -7,88 +8,163 @@
   background-color: rgb(255, 255, 255, 0.5);
 }
 
-.aboutContainer {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .aboutBackground {
-  width: 100%;
-  height: 100%;
-  opacity: 0.3;
-} */
-
-#helloSign {
-  height: 80%;
-  height: 80%;
-  position: absolute;
-  z-index: 1;
-}
-
-.startLeft {
+.signStart {
   opacity: 0;
 }
 
-.slideRight {
-  animation-name: slideRightAnimation;
+.signTranslate {
+  animation-name: signTranslateAnimation;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-}
-
-@keyframes slideRightAnimation {
-  from {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 #me {
-  height: 50%;
-  height: 50%;
-  position: absolute;
-  z-index: 1;
   border-radius: 50%;
 }
 
-.startRight {
+.picStart {
   opacity: 0;
 }
 
-.slideLeft {
-  animation-name: slideLeftAnimation;
+.picTranslate {
+  animation-name: picTranslateAnimation;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
 
-@keyframes slideLeftAnimation {
-  from {
-    transform: translateX(200px);
-    opacity: 0;
+/*~~~~~CSS for desktop view~~~~~*/
+@media only screen and (min-width: 900px) {
+  #leftContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  to {
-    transform: translateX(0);
-    opacity: 1;
+
+  #rightContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #helloSign {
+    height: 80%;
+    height: 80%;
+  }
+
+  @keyframes signTranslateAnimation {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  #me {
+    height: 50%;
+    height: 50%;
+  }
+
+  @keyframes picTranslateAnimation {
+    from {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #right-container {
-    width: 100%;
-    border: 1px solid black;
+/*~~~~~CSS for landscape mobile view~~~~~*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  #leftContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  #rightContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #helloSign {
+    height: 80%;
+    height: 80%;
+  }
+
+  @keyframes signTranslateAnimation {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  #me {
+    height: 50%;
+    height: 50%;
+  }
+
+  @keyframes picTranslateAnimation {
+    from {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+/*~~~~~CSS for portrait mobile view~~~~~*/
+@media only screen and (max-width: 600px) {
   #left-container {
     display: none;
   }
 
   #helloSign {
     display: none;
+  }
+
+  #rightContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #me {
+    width: 200px;
+    height: 200px;
+  }
+
+  @keyframes picTranslateAnimation {
+    from {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 }

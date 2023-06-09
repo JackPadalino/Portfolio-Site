@@ -13,13 +13,13 @@ const About = () => {
   ) => {
     const entry = entries[0];
     if (entry.isIntersecting) {
-      if (entry.target.classList.contains("startLeft")) {
-        entry.target.classList.remove("startLeft");
-        entry.target.classList.add("slideRight");
+      if (entry.target.classList.contains("signStart")) {
+        entry.target.classList.remove("signStart");
+        entry.target.classList.add("signTranslate");
       }
-      if (entry.target.classList.contains("startRight")) {
-        entry.target.classList.remove("startRight");
-        entry.target.classList.add("slideLeft");
+      if (entry.target.classList.contains("picStart")) {
+        entry.target.classList.remove("picStart");
+        entry.target.classList.add("picTranslate");
       }
       observer.unobserve(entry.target);
     }
@@ -43,16 +43,16 @@ const About = () => {
 
   return (
     <div id="aboutMainContainer">
-      <div className="aboutContainer" id="leftContainer">
+      <div id="leftContainer">
         <img
           ref={signRef}
           src={helloSign}
-          className="startLeft"
+          className="signStart"
           id="helloSign"
         />
       </div>
-      <div className="aboutContainer" id="rightContainer">
-        <img ref={meRef} src={me} className="startRight" id="me" />
+      <div id="rightContainer">
+        <img ref={meRef} src={me} className="picStart" id="me" />
       </div>
     </div>
   );
