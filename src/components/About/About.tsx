@@ -1,19 +1,27 @@
 import { useRef, useEffect } from "react";
+import me from "../../../images/pictures/me2.jpg";
 import helloSign from "../../../images/graphics/helloSign2.png";
 import background from "../../../images/graphics/background2.jpg";
 import "./About.css";
 
 const About = () => {
   const signRef = useRef<HTMLImageElement>(null);
+  const meRef = useRef<HTMLImageElement>(null);
 
-  const signCallback = (
+  const observerCallback = (
     entries: IntersectionObserverEntry[],
     observer: IntersectionObserver
   ) => {
     const entry = entries[0];
     if (entry.isIntersecting) {
-      entry.target.classList.remove("startLeft");
-      entry.target.classList.add("slideRight");
+      if (entry.target.classList.contains("startLeft")) {
+        entry.target.classList.remove("startLeft");
+        entry.target.classList.add("slideRight");
+      }
+      if (entry.target.classList.contains("startRight")) {
+        entry.target.classList.remove("startRight");
+        entry.target.classList.add("slideLeft");
+      }
       observer.unobserve(entry.target);
     }
   };
@@ -23,12 +31,24 @@ const About = () => {
     threshold: 0.25,
   };
 
+  const meOptions = {
+    root: null,
+    threshold: 0.25,
+  };
+
   useEffect(() => {
-    const observer = new IntersectionObserver(signCallback, signOptions);
+    const signObserver = new IntersectionObserver(
+      observerCallback,
+      signOptions
+    );
+    const meObserver = new IntersectionObserver(observerCallback, meOptions);
     if (signRef.current) {
-      observer.observe(signRef.current as Element);
+      signObserver.observe(signRef.current as Element);
     }
-  }, [signCallback]);
+    if (meRef.current) {
+      meObserver.observe(meRef.current as Element);
+    }
+  }, [observerCallback]);
 
   return (
     <div id="aboutMainContainer">
@@ -42,6 +62,7 @@ const About = () => {
         <img src={background} id="aboutBackground" />
       </div>
       <div className="aboutContainer" id="rightContainer">
+        <img ref={meRef} src={me} className="startRight" id="me" />
         <img src={background} id="aboutBackground" />
       </div>
     </div>
