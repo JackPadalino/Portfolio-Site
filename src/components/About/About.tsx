@@ -1,7 +1,6 @@
 import { useRef, useEffect } from "react";
 import me from "../../../images/pictures/me2.jpg";
 import helloSign from "../../../images/graphics/helloSign2.png";
-import background from "../../../images/graphics/background2.jpg";
 import "./About.css";
 
 const About = () => {
@@ -26,22 +25,14 @@ const About = () => {
     }
   };
 
-  const signOptions = {
-    root: null,
-    threshold: 0.5,
-  };
-
-  const meOptions = {
+  const options = {
     root: null,
     threshold: 0.5,
   };
 
   useEffect(() => {
-    const signObserver = new IntersectionObserver(
-      observerCallback,
-      signOptions
-    );
-    const meObserver = new IntersectionObserver(observerCallback, meOptions);
+    const signObserver = new IntersectionObserver(observerCallback, options);
+    const meObserver = new IntersectionObserver(observerCallback, options);
     if (signRef.current) {
       signObserver.observe(signRef.current as Element);
     }
@@ -59,11 +50,9 @@ const About = () => {
           className="startLeft"
           id="helloSign"
         />
-        <img src={background} id="aboutBackground" />
       </div>
       <div className="aboutContainer" id="rightContainer">
         <img ref={meRef} src={me} className="startRight" id="me" />
-        <img src={background} id="aboutBackground" />
       </div>
     </div>
   );
