@@ -28,12 +28,12 @@ const About = () => {
 
   const signOptions = {
     root: null,
-    threshold: 0.25,
+    threshold: 0.5,
   };
 
   const meOptions = {
     root: null,
-    threshold: 0.25,
+    threshold: 0.5,
   };
 
   useEffect(() => {
