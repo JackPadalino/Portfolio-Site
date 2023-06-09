@@ -8,28 +8,8 @@
   background-color: rgb(255, 255, 255, 0.5);
 }
 
-.signStart {
-  opacity: 0;
-}
-
-.signTranslate {
-  animation-name: signTranslateAnimation;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-}
-
 #me {
   border-radius: 50%;
-}
-
-.picStart {
-  opacity: 0;
-}
-
-.picTranslate {
-  animation-name: picTranslateAnimation;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
 }
 
 /*~~~~~CSS for desktop view~~~~~*/
@@ -55,6 +35,16 @@
     height: 80%;
   }
 
+  .signStart {
+    opacity: 0;
+  }
+
+  .signTranslate {
+    animation-name: signTranslateAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+  }
+
   @keyframes signTranslateAnimation {
     from {
       transform: translateX(-200px);
@@ -69,6 +59,16 @@
   #me {
     height: 50%;
     height: 50%;
+  }
+
+  .picStart {
+    opacity: 0;
+  }
+
+  .picTranslate {
+    animation-name: picTranslateAnimation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
   }
 
   @keyframes picTranslateAnimation {
@@ -106,46 +106,19 @@
     height: 80%;
   }
 
-  @keyframes signTranslateAnimation {
-    from {
-      transform: translateX(-200px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
   #me {
     height: 50%;
     height: 50%;
-  }
-
-  @keyframes picTranslateAnimation {
-    from {
-      transform: translateX(200px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
   }
 }
 
 /*~~~~~CSS for portrait mobile view~~~~~*/
 @media only screen and (max-width: 600px) {
-  #aboutMainContainer {
-    height: 100vh;
-    display: flex;
-    background-image: url("../../../images/graphics/background2.jpg");
-    background-repeat: repeat;
-    background-blend-mode: overlay;
-    background-color: rgb(255, 255, 255, 0.5);
+  #left-container {
+    display: none;
   }
 
-  #left-container {
+  #helloSign {
     display: none;
   }
 
@@ -157,34 +130,9 @@
     align-items: center;
   }
 
-  #helloSign {
-    display: none;
-  }
-
   #me {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-  }
-
-  .picStart {
-    opacity: 0;
-  }
-
-  .picTranslate {
-    animation-name: picTranslateAnimation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes picTranslateAnimation {
-    from {
-      transform: translateY(200px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
   }
 }
