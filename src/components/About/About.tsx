@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import me from "../../../images/pictures/me2.jpg";
-import helloSign from "../../../images/graphics/helloSign2.png";
+import helloSign from "../../../images/graphics/helloSign3.png";
 import "./About.css";
 
 const About = () => {
