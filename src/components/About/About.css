@@ -1,7 +1,6 @@
 #aboutMainContainer {
   height: 100vh;
-  background-image: url("../../../images/graphics/background2.jpg");
-  background-repeat: repeat;
+  display: flex;
 }
 
 #leftContainer {
@@ -9,7 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff80;
+  /* background-color: #ffffff80; */
 }
 
 #rightContainer {
@@ -17,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff80;
+  /* background-color: #ffffff80; */
 }
 
 #profileContainer {

@@ -1,3 +1,11 @@
+#appContainer {
+  background-image: url("../../../images/graphics/background2.jpg");
+}
+
+#root {
+  background-color: #ffffff80;
+}
+
 @font-face {
   font-family: "Airstream";
   src: local("Airstream"), url("./fonts/Airstream.woff") format("woff");
