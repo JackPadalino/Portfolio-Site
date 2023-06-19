@@ -1,6 +1,5 @@
 #aboutMainContainer {
   height: 100vh;
-  display: flex;
   background-image: url("../../../images/graphics/background2.jpg");
   background-repeat: repeat;
 }
@@ -39,6 +38,10 @@
 
 /*~~~~~CSS for desktop view~~~~~*/
 @media only screen and (min-width: 900px) {
+  #aboutMainContainer {
+    display: flex;
+  }
+
   #leftContainer {
     width: 50%;
   }
@@ -47,22 +50,22 @@
     width: 50%;
   }
 
-  #helloSign {
-    height: 80%;
-    height: 80%;
+  #me {
+    height: 70%;
+    height: 70%;
   }
 
-  .signStart {
+  .meStart {
     opacity: 0;
   }
 
-  .signTranslate {
-    animation-name: signTranslateAnimation;
+  .meTranslate {
+    animation-name: meTranslateAnimation;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
   }
 
-  @keyframes signTranslateAnimation {
+  @keyframes meTranslateAnimation {
     from {
       transform: translateX(-200px);
       opacity: 0;
@@ -73,14 +76,9 @@
     }
   }
 
-  #me {
-    height: 50%;
-    width: 50%;
-  }
-
   #aboutMe {
     width: 75%;
-    font-size: 30px;
+    font-size: 40px;
     text-indent: 50px;
   }
 
@@ -108,6 +106,10 @@
 
 /*~~~~~CSS for landscape mobile view~~~~~*/
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+  #aboutMainContainer {
+    display: flex;
+  }
+
   #leftContainer {
     width: 50%;
   }
@@ -116,45 +118,38 @@
     width: 50%;
   }
 
-  #helloSign {
+  #me {
     height: 80%;
     height: 80%;
   }
 
-  #me {
+  #aboutMe {
     height: 50%;
     width: 50%;
   }
 
   #aboutMe {
     width: 80%;
-    font-size: 15px;
+    font-size: 20px;
     text-indent: 50px;
   }
 }
 
 /*~~~~~CSS for portrait mobile view~~~~~*/
 @media only screen and (max-width: 600px) {
-  #left-container {
-    display: none;
-  }
-
-  #helloSign {
-    display: none;
-  }
-
-  #rightContainer {
-    width: 100%;
+  #aboutMainContainer {
+    display: flex;
+    flex-direction: column;
   }
 
   #me {
-    width: 250px;
-    height: 250px;
+    width: 275px;
+    height: 275px;
   }
 
   #aboutMe {
     width: 80%;
-    font-size: 20px;
+    font-size: 22px;
     text-indent: 50px;
   }
 }

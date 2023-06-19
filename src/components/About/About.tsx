@@ -4,8 +4,8 @@ import helloSign from "../../../images/graphics/helloSign3.png";
 import "./About.css";
 
 const About = () => {
-  const signRef = useRef<HTMLImageElement>(null);
   const meRef = useRef<HTMLImageElement>(null);
+  const aboutMeRef = useRef<HTMLImageElement>(null);
 
   const observerCallback = (
     entries: IntersectionObserverEntry[],
@@ -13,9 +13,9 @@ const About = () => {
   ) => {
     const entry = entries[0];
     if (entry.isIntersecting) {
-      if (entry.target.classList.contains("signStart")) {
-        entry.target.classList.remove("signStart");
-        entry.target.classList.add("signTranslate");
+      if (entry.target.classList.contains("meStart")) {
+        entry.target.classList.remove("meStart");
+        entry.target.classList.add("meTranslate");
       }
       if (entry.target.classList.contains("picStart")) {
         entry.target.classList.remove("picStart");
@@ -31,29 +31,24 @@ const About = () => {
   };
 
   useEffect(() => {
-    const signObserver = new IntersectionObserver(observerCallback, options);
     const meObserver = new IntersectionObserver(observerCallback, options);
-    if (signRef.current) {
-      signObserver.observe(signRef.current as Element);
-    }
+    const aboutMeObserver = new IntersectionObserver(observerCallback, options);
     if (meRef.current) {
       meObserver.observe(meRef.current as Element);
+    }
+    if (aboutMeRef.current) {
+      aboutMeObserver.observe(aboutMeRef.current as Element);
     }
   }, [observerCallback]);
 
   return (
     <div id="aboutMainContainer">
       <div id="leftContainer">
-        <img
-          ref={signRef}
-          src={helloSign}
-          className="signStart"
-          id="helloSign"
-        />
+        <img ref={meRef} src={me} className="meStart" id="me" />
       </div>
       <div id="rightContainer">
-        <div ref={meRef} className="picStart" id="profileContainer">
-          <img src={me} id="me" />
+        <div ref={aboutMeRef} className="picStart" id="profileContainer">
+          {/* <img src={me} id="me" /> */}
           <p id="aboutMe">
             Pleasure to meet you! I'm Jack. I'm a full stack software engineer
             eager to take on exciting and complex projects alongside a talented
