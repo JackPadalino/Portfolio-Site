@@ -1,11 +1,6 @@
 #aboutMainContainer {
   height: 100vh;
-<<<<<<< HEAD
   display: flex;
-=======
-  background-image: url("../../../images/graphics/background2.jpg");
-  background-repeat: repeat;
->>>>>>> bb763915930c2255aeff16c11ebb78ed4f4ac86c
 }
 
 #leftContainer {
