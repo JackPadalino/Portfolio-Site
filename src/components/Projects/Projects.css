@@ -1,6 +1,71 @@
-#projects-container {
+#projectsMaincontainer {
   height: 100vh;
+  display: flex;
+}
+
+#projectsLeftContainer {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#projectsRightContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*~~~~~CSS for desktop view~~~~~*/
+@media only screen and (min-width: 900px) {
+  #projectsMainContainer {
+    display: flex;
+  }
+
+  #projectsLeftContainer {
+    width: 50%;
+  }
+
+  #projectsRightContainer {
+    width: 50%;
+  }
+
+  #driveInSign {
+    height: 90%;
+    width: 90%;
+  }
+}
+
+/*~~~~~CSS for landscape mobile view~~~~~*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  #projectsMainContainer {
+    display: flex;
+  }
+
+  #projectsLeftContainer {
+    width: 50%;
+  }
+
+  #projectsRightContainer {
+    width: 50%;
+  }
+
+  #driveInSign {
+    height: 90%;
+    width: 90%;
+  }
+}
+
+/*~~~~~CSS for portrait mobile view~~~~~*/
+@media only screen and (max-width: 600px) {
+  #projectsMainContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #driveInSign {
+    height: 90%;
+    width: 90%;
+  }
 }

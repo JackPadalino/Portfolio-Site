@@ -43,10 +43,10 @@ const About = () => {
 
   return (
     <div id="aboutMainContainer">
-      <div id="leftContainer">
+      <div id="aboutLeftContainer">
         <img ref={meRef} src={me} className="meStart" id="me" />
       </div>
-      <div id="rightContainer">
+      <div id="aboutRightContainer">
         <div ref={aboutMeRef} className="picStart" id="profileContainer">
           {/* <img src={me} id="me" /> */}
           <p id="aboutMe">
