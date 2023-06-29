@@ -21,7 +21,7 @@ const Projects = () => {
 
   const options = {
     root: null,
-    threshold: 0.5,
+    threshold: 1,
   };
 
   useEffect(() => {
