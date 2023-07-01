@@ -29,18 +29,16 @@ const Carousel = () => {
   };
 
   return (
-    // <div className="carousel-container">
-    <div className="carousel">
-      <div
-        className="inner"
-        style={{ transform: `translate(-${activeIndex * 100}%)` }}
-      >
-        {items.map((item) => {
-          return <CarouselItem item={item} width={"100%"} />;
-        })}
+    <div className="carouselMainContainer">
+      {/* <CarouselItem item={items[activeIndex]} /> */}
+      <div className="carouselItemsContainer">
+        <img className="carousel-img" src={items[activeIndex].icon} />
+        <div className="carousel-item-text">
+          {items[activeIndex].description}
+        </div>
       </div>
 
-      <div className="carousel-buttons">
+      <div className="carouselButtonsContainer">
         <button
           className="button-arrow"
           onClick={() => {
@@ -81,7 +79,6 @@ const Carousel = () => {
         </button>
       </div>
     </div>
-    // </div>
   );
 };
 

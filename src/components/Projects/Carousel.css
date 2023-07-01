@@ -1,50 +1,31 @@
-.carousel-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  background-color: #85a8c5;
-}
-
-.carousel {
+.carouselMainContainer {
   overflow: hidden;
-  width: 100%;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid black;
 }
 
-.inner {
-  white-space: nowrap;
-  transition: transform 0.3s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.carousel-item {
-  display: inline-flex;
+.carouselItemsContainer {
+  display: flex;
   align-items: center;
+  gap: 100px;
   justify-content: center;
-  height: 490px;
+  height: 100%;
+  width: 100%;
   background-color: #fff;
 }
 
 .carousel-item-text {
   font-size: 1.15rem;
-  margin: 40px 0 40px 0;
-  padding: 0 20px 0 20px;
-  white-space: normal;
   color: #617d98;
 }
 .carousel-img {
   width: 250px;
-  padding: 0 20px 0 20px;
 }
 
-/* final stage */
-
-.carousel-buttons {
+.carouselButtonsContainer {
   display: flex;
   justify-content: space-evenly;
 }
