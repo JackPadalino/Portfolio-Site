@@ -50,12 +50,9 @@ const About = () => {
         <div ref={aboutMeRef} className="picStart" id="profileContainer">
           {/* <img src={me} id="me" /> */}
           <p id="aboutMe">
-            Pleasure to meet you! I'm Jack. I'm a full stack software engineer
-            eager to take on exciting and complex projects alongside a talented
-            and supportive team. My enthusiasm for learning, teamwork, and
-            creative problem-solving stems from my time as a Computer Science
-            teacher, and continues as I embark on a new journey to shift from
-            public education into software development.
+            Pleasure to meet you! I'm Jack, a full stack software engineer eager
+            to take on exciting and complex projects alongside a talented and
+            supportive team.
           </p>
         </div>
       </div>
