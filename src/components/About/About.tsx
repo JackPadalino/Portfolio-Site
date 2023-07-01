@@ -44,11 +44,12 @@ const About = () => {
   return (
     <div id="aboutMainContainer">
       <div id="aboutLeftContainer">
-        <img ref={meRef} src={me} className="meStart" id="me" />
+        {/* <img ref={meRef} src={me} className="meStart" id="me" /> */}
+        <img ref={meRef} src={me} id="me" />
       </div>
       <div id="aboutRightContainer">
-        <div ref={aboutMeRef} className="picStart" id="profileContainer">
-          {/* <img src={me} id="me" /> */}
+        {/* <div ref={aboutMeRef} className="picStart" id="profileContainer"> */}
+        <div ref={aboutMeRef} id="profileContainer">
           <p id="aboutMe">
             Pleasure to meet you! I'm Jack, a full stack software engineer eager
             to take on exciting and complex projects alongside a talented and
