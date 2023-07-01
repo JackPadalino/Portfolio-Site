@@ -1,13 +1,11 @@
-import { Routes, Route } from "react-router-dom";
-import { Home, Projects, Resume, Contact } from "..";
+import { Routes, Route, Navigate } from "react-router-dom";
+import { App, Home, Projects, Resume, Contact, Error } from "..";
 
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/resume" element={<Resume />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/" element={<App />} />
+      <Route path="*" element={<Error />} />
     </Routes>
   );
 };

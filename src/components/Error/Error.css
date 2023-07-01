@@ -1,11 +1,6 @@
-#contact-container {
+#error-container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#error-message {
-  font-size: 60px;
-  font-family: airstream;
 }
