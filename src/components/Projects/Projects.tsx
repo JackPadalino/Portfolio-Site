@@ -30,10 +30,10 @@ const Projects = () => {
 
   const driveInOptions = {
     root: null,
-    threshold: 0.7,
+    threshold: 0.8,
   };
 
-  const marqueeOptions = {
+  const carouselOptions = {
     root: null,
     threshold: 1,
   };
@@ -45,7 +45,7 @@ const Projects = () => {
     );
     const carouselObserver = new IntersectionObserver(
       observerCallback,
-      marqueeOptions
+      carouselOptions
     );
     if (driveInRef.current) {
       driveInObserver.observe(driveInRef.current as Element);
@@ -57,24 +57,16 @@ const Projects = () => {
 
   return (
     <div id="projectsMainContainer">
-      <div id="projectsLeftContainer">
+      <div id="projectsSignContainer">
         <img
           id="driveInSign"
           className="driveInStart"
           ref={driveInRef}
-          src={driveInSignOnly}
+          src={driveInSign}
         />
       </div>
-      <div id="projectsRightContainer">
-        {/* <div id="carouselContainer" className="carouselStart" ref={carouselRef}>
-          <Carousel />
-        </div> */}
-        <img
-          id="marqueeSign"
-          className="carouselStart"
-          ref={carouselRef}
-          src={marqueeSign}
-        />
+      <div id="projectsCarouselContainer">
+        <Carousel />
       </div>
     </div>
   );
