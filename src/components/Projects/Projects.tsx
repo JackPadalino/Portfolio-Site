@@ -1,5 +1,8 @@
 import { useRef, useEffect } from "react";
 import driveInSign from "../../../images/graphics/driveInSign.png";
+import driveInSignOnly from "../../../images/graphics/driveInSignOnly.png";
+import marqueeSign from "../../../images/graphics/marqueeSign.png";
+
 import Carousel from "./Carousel";
 import "./Projects.css";
 
@@ -25,16 +28,24 @@ const Projects = () => {
     }
   };
 
-  const options = {
+  const driveInOptions = {
+    root: null,
+    threshold: 0.7,
+  };
+
+  const marqueeOptions = {
     root: null,
     threshold: 1,
   };
 
   useEffect(() => {
-    const driveInObserver = new IntersectionObserver(observerCallback, options);
+    const driveInObserver = new IntersectionObserver(
+      observerCallback,
+      driveInOptions
+    );
     const carouselObserver = new IntersectionObserver(
       observerCallback,
-      options
+      marqueeOptions
     );
     if (driveInRef.current) {
       driveInObserver.observe(driveInRef.current as Element);
@@ -51,13 +62,19 @@ const Projects = () => {
           id="driveInSign"
           className="driveInStart"
           ref={driveInRef}
-          src={driveInSign}
+          src={driveInSignOnly}
         />
       </div>
       <div id="projectsRightContainer">
-        <div id="carouselContainer" className="carouselStart" ref={carouselRef}>
+        {/* <div id="carouselContainer" className="carouselStart" ref={carouselRef}>
           <Carousel />
-        </div>
+        </div> */}
+        <img
+          id="marqueeSign"
+          className="carouselStart"
+          ref={carouselRef}
+          src={marqueeSign}
+        />
       </div>
     </div>
   );

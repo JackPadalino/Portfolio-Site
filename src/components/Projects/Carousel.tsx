@@ -47,28 +47,6 @@ const Carousel = () => {
         >
           <span className="material-symbols-outlined">arrow_back_ios</span>
         </button>
-        <div className="indicators">
-          {items.map((item, index) => {
-            return (
-              <button
-                className="indicator-buttons"
-                onClick={() => {
-                  updateIndex(index);
-                }}
-              >
-                <span
-                  className={`material-symbols-outlined ${
-                    index === activeIndex
-                      ? "indicator-symbol-active"
-                      : "indicator-symbol"
-                  }`}
-                >
-                  radio_button_checked
-                </span>
-              </button>
-            );
-          })}
-        </div>
         <button
           className="button-arrow"
           onClick={() => {

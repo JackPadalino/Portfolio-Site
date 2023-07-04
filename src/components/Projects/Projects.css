@@ -17,10 +17,6 @@
   align-items: center;
 }
 
-.carouselContainer {
-  width: 50%;
-}
-
 /*~~~~~CSS for desktop view~~~~~*/
 @media only screen and (min-width: 900px) {
   #projectsMainContainer {
@@ -59,6 +55,10 @@
       transform: translateX(0);
       opacity: 1;
     }
+  }
+
+  #marqueeSign {
+    width: 90%;
   }
 
   .carouselStart {
