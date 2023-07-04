@@ -65,9 +65,9 @@ const Projects = () => {
           src={driveInSign}
         />
       </div>
-      <div id="projectsCarouselContainer">
+      {/* <div id="projectsCarouselContainer">
         <Carousel />
-      </div>
+      </div> */}
     </div>
   );
 };
