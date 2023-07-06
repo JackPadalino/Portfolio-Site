@@ -37,7 +37,7 @@ const Projects = () => {
 
   const driveInOptions = {
     root: null,
-    threshold: 0.8,
+    threshold: 0.3,
   };
 
   const carouselOptions = {

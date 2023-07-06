@@ -1,10 +1,8 @@
 #projectsMaincontainer {
-  height: 100vh;
   display: flex;
 }
 
 #projectsSignContainer {
-  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -22,6 +20,7 @@
 @media only screen and (min-width: 900px) {
   #projectsMainContainer {
     display: flex;
+    height: 100vh;
     flex-direction: column;
   }
 
@@ -36,7 +35,7 @@
 
   #driveInSign {
     height: 90%;
-    /* width: 90%; */
+    width: 80%;
   }
 
   .driveInStart {
@@ -121,7 +120,7 @@
   }
 }
 
-/*~~~~~CSS for landscape mobile view~~~~~*/
+/*~~~~~CSS for mobile landscape view~~~~~*/
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   #projectsMainContainer {
     display: flex;
@@ -138,8 +137,8 @@
   } */
 
   #driveInSign {
-    height: 90%;
-    /* width: 90%; */
+    height: 80%;
+    width: 70%;
   }
 
   .driveInStart {
@@ -224,11 +223,12 @@
   }
 }
 
-/*~~~~~CSS for portrait mobile view~~~~~*/
+/*~~~~~CSS for mobile portrait view~~~~~*/
 @media only screen and (max-width: 600px) {
   #projectsMainContainer {
     display: flex;
     flex-direction: column;
+    gap: 0px;
   }
 
   #projectsCarouselContainer {
@@ -241,8 +241,8 @@
   } */
 
   #driveInSign {
-    height: 40%;
-    /* width: 90%; */
+    height: 350px;
+    width: 375px;
   }
 
   .driveInStart {
