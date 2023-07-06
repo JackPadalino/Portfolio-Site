@@ -29,7 +29,7 @@ const About = () => {
 
   const options = {
     root: null,
-    threshold: 1,
+    threshold: 0.5,
   };
 
   useEffect(() => {
@@ -47,13 +47,19 @@ const About = () => {
           ref={meRef}
           src={me}
           id="me"
-          className={aboutMe ? "about_me about_me-left" : "about_me"}
+          className={
+            aboutMe ? "about_me about_me-left" : "about_me about_me-left-start"
+          }
         />
       </div>
       <div id="aboutRightContainer">
         <div
           id="profileContainer"
-          className={aboutMe ? "about_me about_me-right" : "about_me"}
+          className={
+            aboutMe
+              ? "about_me about_me-right"
+              : "about_me about_me-right-start"
+          }
         >
           <p id="aboutMe">
             Pleasure to meet you! I'm Jack, a full stack software engineer eager

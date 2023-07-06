@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #ffffff80; */
 }
 
 #aboutRightContainer {
@@ -15,7 +14,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #ffffff80; */
 }
 
 #profileContainer {
@@ -54,73 +52,35 @@
     height: 70%;
   }
 
-  /* .meStart {
-    opacity: 0;
-  }
-
-  .meTranslate {
-    animation-name: meTranslateAnimation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes meTranslateAnimation {
-    from {
-      transform: translateX(-200px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  } */
-
   #aboutMe {
     width: 75%;
     font-size: 50px;
     text-indent: 50px;
   }
 
-  /* .picStart {
-    opacity: 0;
-  }
-
-  .picTranslate {
-    animation-name: picTranslateAnimation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes picTranslateAnimation {
-    from {
-      transform: translateX(200px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  } */
-
   .about_me {
-    transition: all 4s ease-out; /* Animates the sliding transition */
+    transition: all 1.5s ease-out; /* Animates the sliding transition */
   }
 
   .about_me-left-start {
-    transform: translateX(-60%);
+    transform: translateX(-200px);
+    opacity: 0;
   }
 
   .about_me-right-start {
-    transform: translateX(60%);
+    transform: translateX(200px);
+    opacity: 0;
   }
 
   .about_me-left {
-    transform: translateX(60%);
+    transform: translateX(0px);
+    opacity: 1;
   }
 
   /* Slide the panel to the right out of the container */
   .about_me-right {
-    transform: translateX(-60%);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
