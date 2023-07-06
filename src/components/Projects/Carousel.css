@@ -1,0 +1,46 @@
+.carouselMainContainer {
+  overflow: hidden;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.carouselItemsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+.carousel-item-text {
+  font-size: 1.15rem;
+  color: #617d98;
+}
+
+.carousel-img {
+  width: 250px;
+}
+
+.carouselButtonsContainer {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* position: absolute; */
+  top: 80%;
+  width: 100%;
+}
+
+.button-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.material-symbols-outlined {
+  font-size: 1.5rem;
+}

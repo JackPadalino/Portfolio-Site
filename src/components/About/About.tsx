@@ -27,14 +27,22 @@ const About = () => {
     }
   };
 
-  const options = {
+  const meOptions = {
+    root: null,
+    threshold: 0.8,
+  };
+
+  const aboutOptions = {
     root: null,
     threshold: 0.5,
   };
 
   useEffect(() => {
-    const meObserver = new IntersectionObserver(observerCallback, options);
-    const aboutMeObserver = new IntersectionObserver(observerCallback, options);
+    const meObserver = new IntersectionObserver(observerCallback, meOptions);
+    const aboutMeObserver = new IntersectionObserver(
+      observerCallback,
+      aboutOptions
+    );
     if (meRef.current) {
       meObserver.observe(meRef.current as Element);
     }
