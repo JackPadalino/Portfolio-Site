@@ -63,12 +63,12 @@
   }
 
   .about_me-left-start {
-    transform: translateX(-200px);
+    transform: translateX(-100px);
     opacity: 0;
   }
 
   .about_me-right-start {
-    transform: translateX(200px);
+    transform: translateX(100px);
     opacity: 0;
   }
 
