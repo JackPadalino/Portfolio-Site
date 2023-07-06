@@ -11,6 +11,7 @@ const Projects = () => {
   const [curtainOpen, setCurtainOpen] = useState(false);
   const driveInRef = useRef<HTMLImageElement>(null);
   const carouselRef = useRef<HTMLImageElement>(null);
+  const curtainRef = useRef<HTMLImageElement>(null);
 
   const observerCallback = (
     entries: IntersectionObserverEntry[],
@@ -26,6 +27,10 @@ const Projects = () => {
         entry.target.classList.remove("carouselStart");
         entry.target.classList.add("carouselTranslate");
       }
+      if (entry.target.classList.contains("curtain__panel")) {
+        console.log("I see ze curtain!");
+        setCurtainOpen(true);
+      }
       observer.unobserve(entry.target);
     }
   };
@@ -40,9 +45,13 @@ const Projects = () => {
     threshold: 1,
   };
 
+  const curtainOptions = {
+    root: null,
+    threshold: 0.2,
+  };
+
   const openCurtain = () => {
     setCurtainOpen(true);
-    console.log("Open the curtain!");
   };
 
   useEffect(() => {
@@ -54,11 +63,18 @@ const Projects = () => {
       observerCallback,
       carouselOptions
     );
+    const curtainObserver = new IntersectionObserver(
+      observerCallback,
+      curtainOptions
+    );
     if (driveInRef.current) {
       driveInObserver.observe(driveInRef.current as Element);
     }
     if (carouselRef.current) {
       carouselObserver.observe(carouselRef.current as Element);
+    }
+    if (curtainRef.current) {
+      curtainObserver.observe(curtainRef.current as Element);
     }
   }, [observerCallback]);
 
@@ -76,6 +92,7 @@ const Projects = () => {
         <div className="curtain">
           <div className="curtain_wrapper">
             <img
+              ref={curtainRef}
               className={
                 curtainOpen
                   ? "curtain__panel curtain__panel--left"

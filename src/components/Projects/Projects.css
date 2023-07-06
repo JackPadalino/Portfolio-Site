@@ -100,16 +100,16 @@
     float: left; /* Makes sure panels are side-by-side */
     position: relative; /* Needed to define the z-index */
     z-index: 2; /* Places the panels in front of the prize */
-    transition: all 1s ease-out; /* Animates the sliding transition */
+    transition: all 4s ease-out; /* Animates the sliding transition */
   }
 
   .curtain__panel--left {
-    transform: translateX(-75%);
+    transform: translateX(-60%);
   }
 
   /* Slide the panel to the right out of the container */
   .curtain__panel--right {
-    transform: translateX(75%);
+    transform: translateX(60%);
   }
 
   .curtain__prize {
