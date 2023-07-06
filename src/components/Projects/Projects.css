@@ -17,6 +17,7 @@
   #projectsMainContainer {
     display: flex;
     height: 100vh;
+    flex-direction: column;
   }
 
   #projectsCarouselContainer {
@@ -120,6 +121,7 @@
   #projectsMainContainer {
     display: flex;
     height: 100vh;
+    flex-direction: column;
   }
 
   #projectsCarouselContainer {
@@ -222,6 +224,7 @@
 @media only screen and (max-width: 600px) {
   #projectsMainContainer {
     display: flex;
+    flex-direction: column;
     /* height: 100vh; */
   }
 
@@ -295,11 +298,12 @@
 
   .curtain__panel {
     width: 50%;
-    height: 75vh;
+    height: 50vh;
     float: left;
     position: relative;
     z-index: 2;
     transition: all 4s ease-out;
+    /* display: none; */
   }
 
   .curtain__panel--left {

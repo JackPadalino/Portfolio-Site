@@ -81,7 +81,7 @@ const Projects = () => {
           src={driveInSign}
         />
       </div>
-      {/* <div id="projectsCarouselContainer">
+      <div id="projectsCarouselContainer">
         <div className="curtain">
           <div className="curtain_wrapper">
             <img
@@ -92,7 +92,6 @@ const Projects = () => {
                   : "curtain__panel"
               }
               src={projectsCurtain}
-              onClick={openCurtain}
             />
             <div className="curtain_prize"></div>
             <img
@@ -102,11 +101,10 @@ const Projects = () => {
                   : "curtain__panel"
               }
               src={projectsCurtain}
-              onClick={openCurtain}
             />
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
