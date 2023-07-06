@@ -1,7 +1,3 @@
-#projectsMaincontainer {
-  display: flex;
-}
-
 #projectsSignContainer {
   width: 100%;
   display: flex;
@@ -21,7 +17,6 @@
   #projectsMainContainer {
     display: flex;
     height: 100vh;
-    flex-direction: column;
   }
 
   #projectsCarouselContainer {
@@ -124,7 +119,7 @@
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   #projectsMainContainer {
     display: flex;
-    flex-direction: column;
+    height: 100vh;
   }
 
   #projectsCarouselContainer {
@@ -227,8 +222,7 @@
 @media only screen and (max-width: 600px) {
   #projectsMainContainer {
     display: flex;
-    flex-direction: column;
-    gap: 0px;
+    /* height: 100vh; */
   }
 
   #projectsCarouselContainer {
@@ -241,7 +235,7 @@
   } */
 
   #driveInSign {
-    height: 350px;
+    height: 320px;
     width: 375px;
   }
 

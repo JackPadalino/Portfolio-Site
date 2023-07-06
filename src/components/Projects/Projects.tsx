@@ -1,9 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import driveInSign from "../../../images/graphics/driveInSign.png";
-import driveInSignOnly from "../../../images/graphics/driveInSignOnly.png";
-import marqueeSign from "../../../images/graphics/marqueeSign.png";
 import projectsCurtain from "../../../images/graphics/projectsCurtain2.png";
-
 import Carousel from "./Carousel";
 import "./Projects.css";
 
@@ -48,10 +45,6 @@ const Projects = () => {
   const curtainOptions = {
     root: null,
     threshold: 0.2,
-  };
-
-  const openCurtain = () => {
-    setCurtainOpen(true);
   };
 
   useEffect(() => {
