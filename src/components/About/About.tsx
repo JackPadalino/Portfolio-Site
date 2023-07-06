@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import me from "../../../images/pictures/me2.jpg";
 import helloSign from "../../../images/graphics/helloSign3.png";
 import "./About.css";
@@ -6,6 +6,7 @@ import "./About.css";
 const About = () => {
   const meRef = useRef<HTMLImageElement>(null);
   const aboutMeRef = useRef<HTMLImageElement>(null);
+  const [aboutMe, setAboutMe] = useState(false);
 
   const observerCallback = (
     entries: IntersectionObserverEntry[],
@@ -13,14 +14,15 @@ const About = () => {
   ) => {
     const entry = entries[0];
     if (entry.isIntersecting) {
-      if (entry.target.classList.contains("meStart")) {
-        entry.target.classList.remove("meStart");
-        entry.target.classList.add("meTranslate");
+      if (entry.target.classList.contains("about_me")) {
+        setAboutMe(true);
+        // entry.target.classList.remove("meStart");
+        // entry.target.classList.add("meTranslate");
       }
-      if (entry.target.classList.contains("picStart")) {
-        entry.target.classList.remove("picStart");
-        entry.target.classList.add("picTranslate");
-      }
+      // if (entry.target.classList.contains("picStart")) {
+      //   entry.target.classList.remove("picStart");
+      //   entry.target.classList.add("picTranslate");
+      // }
       observer.unobserve(entry.target);
     }
   };
@@ -32,7 +34,7 @@ const About = () => {
 
   const aboutOptions = {
     root: null,
-    threshold: 1,
+    threshold: 0.5,
   };
 
   useEffect(() => {
@@ -44,20 +46,29 @@ const About = () => {
     if (meRef.current) {
       meObserver.observe(meRef.current as Element);
     }
-    if (aboutMeRef.current) {
-      aboutMeObserver.observe(aboutMeRef.current as Element);
-    }
   }, [observerCallback]);
 
   return (
     <div id="aboutMainContainer">
       <div id="aboutLeftContainer">
-        <img ref={meRef} src={me} className="meStart" id="me" />
-        {/* <img ref={meRef} src={me} id="me" /> */}
+        <img
+          ref={meRef}
+          src={me}
+          id="me"
+          className={
+            aboutMe ? "about_me about_me-left" : "about_me about_me-left-start"
+          }
+        />
       </div>
       <div id="aboutRightContainer">
-        <div ref={aboutMeRef} className="picStart" id="profileContainer">
-          {/* <div ref={aboutMeRef} id="profileContainer"> */}
+        <div
+          id="profileContainer"
+          className={
+            aboutMe
+              ? "about_me about_me-right"
+              : "about_me about_me-right-start"
+          }
+        >
           <p id="aboutMe">
             Pleasure to meet you! I'm Jack, a full stack software engineer eager
             to take on exciting and complex projects alongside a talented and

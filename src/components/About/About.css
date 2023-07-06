@@ -1,5 +1,4 @@
 #aboutMainContainer {
-  height: 100vh;
   display: flex;
 }
 
@@ -8,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #ffffff80; */
 }
 
 #aboutRightContainer {
@@ -16,7 +14,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #ffffff80; */
 }
 
 #profileContainer {
@@ -39,6 +36,7 @@
 @media only screen and (min-width: 900px) {
   #aboutMainContainer {
     display: flex;
+    height: 100vh;
   }
 
   #aboutLeftContainer {
@@ -54,52 +52,35 @@
     height: 70%;
   }
 
-  .meStart {
-    opacity: 0;
-  }
-
-  .meTranslate {
-    animation-name: meTranslateAnimation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes meTranslateAnimation {
-    from {
-      transform: translateX(-200px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-
   #aboutMe {
     width: 75%;
     font-size: 65px;
     text-indent: 50px;
   }
 
-  .picStart {
+  .about_me {
+    transition: all 1.5s ease-out; /* Animates the sliding transition */
+  }
+
+  .about_me-left-start {
+    transform: translateX(-200px);
     opacity: 0;
   }
 
-  .picTranslate {
-    animation-name: picTranslateAnimation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
+  .about_me-right-start {
+    transform: translateX(200px);
+    opacity: 0;
   }
 
-  @keyframes picTranslateAnimation {
-    from {
-      transform: translateX(200px);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  .about_me-left {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  /* Slide the panel to the right out of the container */
+  .about_me-right {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 
@@ -107,6 +88,7 @@
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   #aboutMainContainer {
     display: flex;
+    height: 100vh;
   }
 
   #aboutLeftContainer {
@@ -132,6 +114,31 @@
     font-size: 20px;
     text-indent: 50px;
   }
+
+  .about_me {
+    transition: all 1.5s ease-out; /* Animates the sliding transition */
+  }
+
+  .about_me-left-start {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  .about_me-right-start {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  .about_me-left {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  /* Slide the panel to the right out of the container */
+  .about_me-right {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 /*~~~~~CSS for portrait mobile view~~~~~*/
@@ -139,6 +146,8 @@
   #aboutMainContainer {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 20px;
   }
 
   #me {
@@ -150,5 +159,30 @@
     width: 80%;
     font-size: 22px;
     text-indent: 50px;
+  }
+
+  .about_me {
+    transition: all 1.5s ease-out; /* Animates the sliding transition */
+  }
+
+  .about_me-left-start {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  .about_me-right-start {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  .about_me-left {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  /* Slide the panel to the right out of the container */
+  .about_me-right {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
