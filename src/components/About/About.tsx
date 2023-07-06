@@ -25,14 +25,22 @@ const About = () => {
     }
   };
 
-  const options = {
+  const meOptions = {
+    root: null,
+    threshold: 0.8,
+  };
+
+  const aboutOptions = {
     root: null,
     threshold: 1,
   };
 
   useEffect(() => {
-    const meObserver = new IntersectionObserver(observerCallback, options);
-    const aboutMeObserver = new IntersectionObserver(observerCallback, options);
+    const meObserver = new IntersectionObserver(observerCallback, meOptions);
+    const aboutMeObserver = new IntersectionObserver(
+      observerCallback,
+      aboutOptions
+    );
     if (meRef.current) {
       meObserver.observe(meRef.current as Element);
     }
@@ -44,12 +52,12 @@ const About = () => {
   return (
     <div id="aboutMainContainer">
       <div id="aboutLeftContainer">
-        {/* <img ref={meRef} src={me} className="meStart" id="me" /> */}
-        <img ref={meRef} src={me} id="me" />
+        <img ref={meRef} src={me} className="meStart" id="me" />
+        {/* <img ref={meRef} src={me} id="me" /> */}
       </div>
       <div id="aboutRightContainer">
-        {/* <div ref={aboutMeRef} className="picStart" id="profileContainer"> */}
-        <div ref={aboutMeRef} id="profileContainer">
+        <div ref={aboutMeRef} className="picStart" id="profileContainer">
+          {/* <div ref={aboutMeRef} id="profileContainer"> */}
           <p id="aboutMe">
             Pleasure to meet you! I'm Jack, a full stack software engineer eager
             to take on exciting and complex projects alongside a talented and
