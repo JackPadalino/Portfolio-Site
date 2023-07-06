@@ -54,7 +54,7 @@
     height: 70%;
   }
 
-  .meStart {
+  /* .meStart {
     opacity: 0;
   }
 
@@ -73,7 +73,7 @@
       transform: translateX(0);
       opacity: 1;
     }
-  }
+  } */
 
   #aboutMe {
     width: 75%;
@@ -81,7 +81,7 @@
     text-indent: 50px;
   }
 
-  .picStart {
+  /* .picStart {
     opacity: 0;
   }
 
@@ -100,6 +100,27 @@
       transform: translateX(0);
       opacity: 1;
     }
+  } */
+
+  .about_me {
+    transition: all 4s ease-out; /* Animates the sliding transition */
+  }
+
+  .about_me-left-start {
+    transform: translateX(-60%);
+  }
+
+  .about_me-right-start {
+    transform: translateX(60%);
+  }
+
+  .about_me-left {
+    transform: translateX(60%);
+  }
+
+  /* Slide the panel to the right out of the container */
+  .about_me-right {
+    transform: translateX(-60%);
   }
 }
 
