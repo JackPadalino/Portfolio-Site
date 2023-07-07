@@ -38,7 +38,8 @@ const Carousel = () => {
       </div>
 
       <div className="carouselButtonsContainer">
-        <button
+        <p>This is the buttons div</p>
+        {/* <button
           className="button-arrow"
           onClick={() => {
             updateIndex(activeIndex - 1);
@@ -53,7 +54,7 @@ const Carousel = () => {
           }}
         >
           <span className="material-symbols-outlined">arrow_forward_ios</span>
-        </button>
+        </button> */}
       </div>
     </div>
   );
