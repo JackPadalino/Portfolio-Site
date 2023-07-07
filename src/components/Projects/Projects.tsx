@@ -74,12 +74,14 @@ const Projects = () => {
   return (
     <div id="projectsMainContainer">
       <div id="projectsSignContainer">
+        {/* <div> */}
         <img
           id="driveInSign"
           className="driveInStart"
           ref={driveInRef}
           src={driveInSign}
         />
+        {/* </div> */}
       </div>
       <div id="projectsCurtainCarouselContainer">
         <div className="curtain">
