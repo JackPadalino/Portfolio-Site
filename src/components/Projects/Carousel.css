@@ -3,14 +3,6 @@
   background-color: green;
 }
 
-#carouselTestDiv2 {
-  height: 100px;
-  background-color: orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .carouselMainContainer {
   /* overflow: hidden; */
   width: 100%;
