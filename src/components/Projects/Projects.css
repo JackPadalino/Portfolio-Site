@@ -1,37 +1,27 @@
-#projectsSignContainer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* #projectsRightContainer {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 /*~~~~~CSS for desktop view~~~~~*/
 @media only screen and (min-width: 900px) {
   #projectsMainContainer {
     display: flex;
-    height: 100vh;
     flex-direction: column;
   }
 
-  #projectsCarouselContainer {
+  #projectsSignContainer {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
-  /* #projectsRightContainer {
-    width: 50%;
-  } */
+  #projectsCurtainCarouselContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
 
   #driveInSign {
     height: 80%;
-    width: 60%;
+    width: 55%;
   }
 
   .driveInStart {
@@ -79,19 +69,16 @@
   /* For curtain opening effect on carousel */
   .curtain {
     width: 100%; /* Ensures the component is the full screen width */
-    height: 100vh; /* We're using this for demo purposes */
-    overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
-  }
-
-  .curtain__wrapper {
-    width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
   }
 
   .curtain__panel {
     /* background: orange; */
     width: 50%; /* Each panel takes up half the container */
-    height: 75vh;
+    height: 100%;
     float: left; /* Makes sure panels are side-by-side */
     position: relative; /* Needed to define the z-index */
     z-index: 2; /* Places the panels in front of the prize */
@@ -107,12 +94,15 @@
     transform: translateX(60%);
   }
 
-  .curtain__prize {
-    background: #333;
+  .curtain_prize {
+    /* background-color: black; */
     position: absolute; /* Forces the prize position into the container start */
     z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
     width: 100%;
-    height: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -120,23 +110,26 @@
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   #projectsMainContainer {
     display: flex;
-    /* height: 100vh; */
     flex-direction: column;
-    gap: 20px;
   }
 
-  #projectsCarouselContainer {
+  #projectsSignContainer {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
-  /* #projectsRightContainer {
-    width: 50%;
-  } */
+  #projectsCurtainCarouselContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
 
   #driveInSign {
     height: 80%;
-    width: 60%;
+    width: 55%;
   }
 
   .driveInStart {
@@ -184,19 +177,16 @@
   /* For curtain opening effect on carousel */
   .curtain {
     width: 100%; /* Ensures the component is the full screen width */
-    height: 100vh; /* We're using this for demo purposes */
-    overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
-  }
-
-  .curtain__wrapper {
-    width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
   }
 
   .curtain__panel {
     /* background: orange; */
     width: 50%; /* Each panel takes up half the container */
-    height: 75vh;
+    height: 100%;
     float: left; /* Makes sure panels are side-by-side */
     position: relative; /* Needed to define the z-index */
     z-index: 2; /* Places the panels in front of the prize */
@@ -212,12 +202,15 @@
     transform: translateX(60%);
   }
 
-  .curtain__prize {
-    background: #333;
+  .curtain_prize {
+    /* background-color: black; */
     position: absolute; /* Forces the prize position into the container start */
     z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
     width: 100%;
-    height: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -226,22 +219,25 @@
   #projectsMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    /* height: 100vh; */
   }
 
-  #projectsCarouselContainer {
+  #projectsSignContainer {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
-  /* #projectsRightContainer {
-    width: 50%;
-  } */
+  #projectsCurtainCarouselContainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
 
   #driveInSign {
-    height: 100%;
-    width: 99%;
+    height: 70%;
+    width: 95%;
   }
 
   .driveInStart {
@@ -288,39 +284,40 @@
 
   /* For curtain opening effect on carousel */
   .curtain {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  .curtain__wrapper {
-    width: 100%;
+    width: 100%; /* Ensures the component is the full screen width */
     height: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Allows us to slide the panels outside the container without them showing */
   }
 
   .curtain__panel {
-    /* width: 50%;
-    height: 50vh;
-    float: left;
-    position: relative;
-    z-index: 2;
-    transition: all 4s ease-out; */
-    display: none;
+    /* background: orange; */
+    width: 50%; /* Each panel takes up half the container */
+    height: 100%;
+    float: left; /* Makes sure panels are side-by-side */
+    position: relative; /* Needed to define the z-index */
+    z-index: 2; /* Places the panels in front of the prize */
+    transition: all 4s ease-out; /* Animates the sliding transition */
   }
 
   .curtain__panel--left {
     transform: translateX(-60%);
   }
 
+  /* Slide the panel to the right out of the container */
   .curtain__panel--right {
     transform: translateX(60%);
   }
 
-  .curtain__prize {
-    background: #333;
-    position: absolute;
-    z-index: 1;
+  .curtain_prize {
+    /* background-color: black; */
+    position: absolute; /* Forces the prize position into the container start */
+    z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
     width: 100%;
-    height: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

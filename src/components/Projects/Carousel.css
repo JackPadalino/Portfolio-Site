@@ -1,7 +1,7 @@
 .carouselMainContainer {
   overflow: hidden;
-  width: 50%;
-  height: 500px;
+  width: 75%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
