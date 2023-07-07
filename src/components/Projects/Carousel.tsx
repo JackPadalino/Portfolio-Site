@@ -56,7 +56,9 @@ const Carousel = () => {
         <span className="material-symbols-outlined">arrow_forward_ios</span>
         </button>
       </div> */}
-      <div id="carouselTestDiv2"></div>
+      <div id="carouselTestDiv2">
+        <p>This is the buttons div</p>
+      </div>
     </div>
   );
 };
