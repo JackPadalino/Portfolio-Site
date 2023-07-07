@@ -31,31 +31,31 @@ const Carousel = () => {
   return (
     <div className="carouselMainContainer">
       {/* <div id="carouselTestDiv1"></div> */}
-      {/* <div className="carouselItemsContainer">
+      <div className="carouselItemsContainer">
         <img className="carousel-img" src={items[activeIndex].icon} />
         <div className="carousel-item-text">
           {items[activeIndex].description}
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="carouselButtonsContainer">
+      <div className="carouselButtonsContainer">
         <button
-        className="button-arrow"
-        onClick={() => {
-          updateIndex(activeIndex - 1);
-        }}
+          className="button-arrow"
+          onClick={() => {
+            updateIndex(activeIndex - 1);
+          }}
         >
-        <span className="material-symbols-outlined">arrow_back_ios</span>
+          <span className="material-symbols-outlined">arrow_back_ios</span>
         </button>
         <button
-        className="button-arrow"
-        onClick={() => {
-          updateIndex(activeIndex + 1);
-        }}
+          className="button-arrow"
+          onClick={() => {
+            updateIndex(activeIndex + 1);
+          }}
         >
-        <span className="material-symbols-outlined">arrow_forward_ios</span>
+          <span className="material-symbols-outlined">arrow_forward_ios</span>
         </button>
-      </div> */}
+      </div>
       <div id="carouselTestDiv2">
         <p>This is the buttons div</p>
       </div>
