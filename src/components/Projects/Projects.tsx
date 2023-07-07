@@ -94,9 +94,8 @@ const Projects = () => {
             }
             src={projectsCurtain}
           />
-          <div className="curtain_prize">
-            <Carousel />
-          </div>
+
+          <Carousel />
           <img
             className={
               curtainOpen
