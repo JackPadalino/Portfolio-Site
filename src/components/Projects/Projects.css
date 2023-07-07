@@ -185,12 +185,13 @@
 
   .curtain__panel {
     /* background: orange; */
-    width: 50%; /* Each panel takes up half the container */
+    /* width: 50%;
     height: 100%;
-    float: left; /* Makes sure panels are side-by-side */
-    position: relative; /* Needed to define the z-index */
-    z-index: 2; /* Places the panels in front of the prize */
-    transition: all 4s ease-out; /* Animates the sliding transition */
+    float: left;
+    position: relative;
+    z-index: 2;
+    transition: all 4s ease-out; */
+    display: none;
   }
 
   .curtain__panel--left {
