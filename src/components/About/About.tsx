@@ -44,20 +44,18 @@ const About = () => {
         />
       </div>
       <div id="aboutRightContainer">
-        <div
-          id="profileContainer"
+        <p
+          id="aboutMe"
           className={
             aboutMe
               ? "about_me about_me-right"
               : "about_me about_me-right-start"
           }
         >
-          <p id="aboutMe">
-            Pleasure to meet you! I'm Jack, a full stack software engineer eager
-            to take on exciting and complex projects alongside a talented and
-            supportive team.
-          </p>
-        </div>
+          Pleasure to meet you! I'm Jack, a full stack software engineer eager
+          to take on exciting and complex projects alongside a talented and
+          supportive team.
+        </p>
       </div>
     </div>
   );
