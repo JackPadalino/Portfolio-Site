@@ -185,13 +185,12 @@
 
   .curtain__panel {
     /* background: orange; */
-    /* width: 50%;
+    width: 50%;
     height: 100%;
     float: left;
     position: relative;
     z-index: 2;
-    transition: all 4s ease-out; */
-    display: none;
+    transition: all 4s ease-out;
   }
 
   .curtain__panel--left {

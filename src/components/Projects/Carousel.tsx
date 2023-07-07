@@ -30,7 +30,9 @@ const Carousel = () => {
 
   return (
     <div className="carouselMainContainer">
-      <div className="carouselItemsContainer">
+      <div id="carouselTestDiv1"></div>
+      <div id="carouselTestDiv2"></div>
+      {/* <div className="carouselItemsContainer">
         <img className="carousel-img" src={items[activeIndex].icon} />
         <div className="carousel-item-text">
           {items[activeIndex].description}
@@ -38,8 +40,7 @@ const Carousel = () => {
       </div>
 
       <div className="carouselButtonsContainer">
-        <p>This is the buttons div</p>
-        {/* <button
+        <button
           className="button-arrow"
           onClick={() => {
             updateIndex(activeIndex - 1);
@@ -54,8 +55,8 @@ const Carousel = () => {
           }}
         >
           <span className="material-symbols-outlined">arrow_forward_ios</span>
-        </button> */}
-      </div>
+        </button>
+      </div> */}
     </div>
   );
 };
