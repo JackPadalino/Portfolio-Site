@@ -34,7 +34,7 @@ const Projects = () => {
 
   const driveInOptions = {
     root: null,
-    threshold: 0.3,
+    threshold: 0.5,
   };
 
   const carouselOptions = {
@@ -44,7 +44,7 @@ const Projects = () => {
 
   const curtainOptions = {
     root: null,
-    threshold: 0.2,
+    threshold: 0.5,
   };
 
   useEffect(() => {

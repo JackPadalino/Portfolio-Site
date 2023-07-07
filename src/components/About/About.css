@@ -157,27 +157,27 @@
   }
 
   .about_me {
-    transition: all 1.5s ease-out; /* Animates the sliding transition */
+    transition: all 1s ease-out; /* Animates the sliding transition */
   }
 
   .about_me-left-start {
-    /* transform: translateX(100px); */
+    transform: translateY(100px);
     opacity: 0;
   }
 
   .about_me-right-start {
-    /* transform: translateX(-100px); */
+    transform: translateY(100px);
     opacity: 0;
   }
 
   .about_me-left {
-    /* transform: translateX(0px); */
+    transform: translateY(0px);
     opacity: 1;
   }
 
   /* Slide the panel to the right out of the container */
   .about_me-right {
-    /* transform: translateX(0px); */
+    transform: translateY(0px);
     opacity: 1;
   }
 }
