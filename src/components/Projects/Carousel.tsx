@@ -31,12 +31,12 @@ const Carousel = () => {
   return (
     <div className="carouselMainContainer">
       {/* <div id="carouselTestDiv1"></div> */}
-      <div className="carouselItemsContainer">
+      {/* <div className="carouselItemsContainer">
         <img className="carousel-img" src={items[activeIndex].icon} />
         <div className="carousel-item-text">
           {items[activeIndex].description}
         </div>
-      </div>
+      </div> */}
 
       {/* <div className="carouselButtonsContainer">
         <button
