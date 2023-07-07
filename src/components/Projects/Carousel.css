@@ -26,13 +26,13 @@
   }
 
   .carouselButtonsContainer {
-    background-color: #fff;
+    background-color: green;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* position: absolute; */
-    top: 80%;
-    width: 100%;
+    /* top: 80%; */
+    /* width: 100%; */
   }
 
   .button-arrow {
@@ -75,13 +75,13 @@
   }
 
   .carouselButtonsContainer {
-    background-color: #fff;
+    background-color: green;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* position: absolute; */
-    top: 80%;
-    width: 100%;
+    /* top: 80%;
+    width: 100%; */
   }
 
   .button-arrow {
@@ -124,13 +124,13 @@
   }
 
   .carouselButtonsContainer {
-    background-color: #fff;
+    background-color: green;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* position: absolute; */
-    top: 80%;
-    width: 100%;
+    /* top: 80%;
+    width: 100%; */
   }
 
   .button-arrow {
