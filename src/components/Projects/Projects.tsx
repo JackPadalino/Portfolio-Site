@@ -81,28 +81,28 @@ const Projects = () => {
           src={driveInSign}
         />
       </div>
-      <div id="projectsCarouselContainer">
+      <div id="projectsCurtainCarouselContainer">
         <div className="curtain">
-          <div className="curtain_wrapper">
-            <img
-              ref={curtainRef}
-              className={
-                curtainOpen
-                  ? "curtain__panel curtain__panel--left"
-                  : "curtain__panel"
-              }
-              src={projectsCurtain}
-            />
-            <div className="curtain_prize"></div>
-            <img
-              className={
-                curtainOpen
-                  ? "curtain__panel curtain__panel--right"
-                  : "curtain__panel"
-              }
-              src={projectsCurtain}
-            />
+          <img
+            ref={curtainRef}
+            className={
+              curtainOpen
+                ? "curtain__panel curtain__panel--left"
+                : "curtain__panel"
+            }
+            src={projectsCurtain}
+          />
+          <div className="curtain_prize">
+            <Carousel />
           </div>
+          <img
+            className={
+              curtainOpen
+                ? "curtain__panel curtain__panel--right"
+                : "curtain__panel"
+            }
+            src={projectsCurtain}
+          />
         </div>
       </div>
     </div>
