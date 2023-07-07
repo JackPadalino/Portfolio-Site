@@ -15,14 +15,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   background-color: #fff;
 }
 
 .carousel-item-text {
-  font-size: 1.15rem;
-  color: #617d98;
+  font-size: 30px;
+  font-family: Airstream;
 }
 
 .carousel-img {
@@ -50,4 +51,15 @@
 
 .material-symbols-outlined {
   font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .carousel-item-text {
+    font-size: 20px;
+  }
 }

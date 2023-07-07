@@ -3,6 +3,7 @@ import CarouselItem from "./CarouselItem";
 import boo from "./images/boo.svg";
 import mindfullness from "./images/mindfullness.svg";
 import coffee from "./images/coffee.svg";
+import underConstruction from "../../../images/graphics/underConstruction.png";
 import "./Carousel.css";
 
 export interface ItemType {
@@ -11,9 +12,9 @@ export interface ItemType {
 }
 
 const items: ItemType[] = [
-  { description: "Boo!", icon: boo },
-  { description: "Focus on your mindfullness", icon: mindfullness },
-  { description: "Drink coffee", icon: coffee },
+  { description: "Projects coming soon!", icon: underConstruction },
+  { description: "Please bear with us!", icon: underConstruction },
+  { description: "We promise they will be great!", icon: underConstruction },
 ];
 
 const Carousel = () => {
