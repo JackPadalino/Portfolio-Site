@@ -3,7 +3,7 @@
   #projectsMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
 
   #projectsSignContainer {
@@ -102,7 +102,7 @@
   #projectsMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
 
   #projectsSignContainer {
@@ -212,7 +212,7 @@
   #projectsMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
   }
 
   #projectsSignContainer {
@@ -220,12 +220,13 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
   }
 
   #projectsCurtainCarouselContainer {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     height: 100vh;
   }
 
