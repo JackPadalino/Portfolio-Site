@@ -121,40 +121,98 @@
     z-index: 1; /* Places the prize behind the panels, which are z-index 2 */
     width: 90%;
     height: 90%;
-    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
   }
 
-  .carouselItemsContainer {
+  /* .carouselItemsContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
     height: 100%;
     width: 100%;
     background-color: #fff;
-  }
+  } */
 
-  .carousel-item-text {
-    font-size: 30px;
-    font-family: Airstream;
+  .carouselImgContainer {
+    height: 85%;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .carousel-img {
     width: 25%;
-    height: 50%;
+    height: 75%;
+  }
+
+  .carousel-item-text {
+    /* font-size: 30px;
+    font-family: Airstream; */
+    width: 40%;
+    height: 75%;
+  }
+
+  .itemTitle {
+    font-family: Goldsaber;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .itemDescription {
+    font-family: Wabene;
+    font-size: 10px;
+    margin-bottom: 25px;
+  }
+
+  .itemStackLabel {
+    font-family: Goldsaber;
+    font-size: 15px;
+    color: #f8cb2e;
+  }
+
+  .itemStack {
+    font-size: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .itemTech {
+    font-family: Wabene;
+  }
+
+  .itemLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .itemLinks a {
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    text-decoration: none;
+    font-family: Wabene;
+    font-size: 10px;
+  }
+  .itemLinks a:hover {
+    color: #ee5007;
+    font-weight: bold;
   }
 
   .carouselButtonsContainer {
-    background-color: #fff;
+    /* background-color: #fff; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     /* position: absolute; */
     /* top: 80%; */
     width: 100%;
-    height: 100px;
+    height: 15%;
   }
 
   .button-arrow {

@@ -47,7 +47,7 @@ const items: ItemType[] = [
   {
     title: "School Attendance",
     description:
-      "Single page application to help NYC school admin to track staff attendance/absences and assign coverages",
+      "Single page application to help NYC school admin to track staff attendance",
     tech: ["ExpressJS", "ReactJS", "Node", "React/Redux", "PostgreSQL"],
     gitHub: "https://github.com/JackPadalino/TeacherAttendanceApp",
     video: "https://www.youtube.com/watch?v=xYJgEmK5XcQ",
