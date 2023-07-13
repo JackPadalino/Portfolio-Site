@@ -29,7 +29,7 @@ const items: ItemType[] = [
     icon: ams,
   },
   {
-    title: "Limit Financial",
+    title: "Limit",
     description:
       "Single page application that allows users to track their spending and set goals",
     tech: [
@@ -45,7 +45,7 @@ const items: ItemType[] = [
     icon: limit,
   },
   {
-    title: "School Attendance",
+    title: "School Admin",
     description:
       "Single page application to help NYC school admin to track staff attendance",
     tech: ["ExpressJS", "ReactJS", "Node", "React/Redux", "PostgreSQL"],
