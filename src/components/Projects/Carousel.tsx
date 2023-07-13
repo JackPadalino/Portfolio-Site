@@ -29,7 +29,7 @@ const items: ItemType[] = [
     icon: ams,
   },
   {
-    title: "Limit Financial",
+    title: "Limit",
     description:
       "Single page application that allows users to track their spending and set goals",
     tech: [
@@ -45,7 +45,7 @@ const items: ItemType[] = [
     icon: limit,
   },
   {
-    title: "School Attendance",
+    title: "School Admin",
     description:
       "Single page application to help NYC school admin to track staff attendance",
     tech: ["ExpressJS", "ReactJS", "Node", "React/Redux", "PostgreSQL"],
@@ -69,39 +69,46 @@ const Carousel = () => {
 
   return (
     <div className="carouselMainContainer">
-      {/* <div id="carouselTestDiv1"></div> */}
-      {/* <div className="carouselItemsContainer"> */}
-      <div className="carouselImgContainer">
-        <img className="carousel-img" src={items[activeIndex].icon} />
-        <div className="carousel-item-text">
-          <p className="itemTitle">{items[activeIndex].title}</p>
-          <p className="itemDescription">{items[activeIndex].description}</p>
-          <p className="itemStackLabel">Tech Stack</p>
-          <ul className="itemStack">
-            {items[activeIndex].tech.map((thing) => (
-              <li className="itemTech">{thing}</li>
-            ))}
-          </ul>
-          <div className="itemLinks">
-            <a
-              target="_blank"
-              className="itemLink"
-              href={items[activeIndex].gitHub}
-            >
-              GitHub &rarr;
-            </a>
-            <a
-              target="_blank"
-              className="itemLink"
-              href={items[activeIndex].video}
-            >
-              Video &rarr;
-            </a>
+      <div className="carouselImageDataContainer">
+        <div className="carouselImageContainer">
+          <img className="carouselImage" src={items[activeIndex].icon} />
+        </div>
+        <div className="carouselDataContainer">
+          <div className="carouselTitleDescriptionContainer">
+            <p className="projectTitle">{items[activeIndex].title}</p>
+            <p className="projectDescription">
+              {items[activeIndex].description}
+            </p>
+          </div>
+          <div className="carouselStackLinks">
+            <div className="carouselStackContainer">
+              <p className="projectStackLabel">Tech Stack</p>
+              <ul className="projectStack">
+                {items[activeIndex].tech.map((thing) => (
+                  <li className="projectTech">{thing}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="carouselLinks">
+              <a
+                target="_blank"
+                className="itemLink"
+                href={items[activeIndex].gitHub}
+              >
+                GitHub &rarr;
+              </a>
+              <a
+                target="_blank"
+                className="itemLink"
+                href={items[activeIndex].video}
+              >
+                Video &rarr;
+              </a>
+            </div>
           </div>
         </div>
       </div>
-
-      <div className="carouselButtonsContainer">
+      <div className="projectButtonsContainer">
         <button
           className="button-arrow"
           onClick={() => {
@@ -119,7 +126,6 @@ const Carousel = () => {
           <span className="material-symbols-outlined">arrow_forward_ios</span>
         </button>
       </div>
-      {/* </div> */}
     </div>
   );
 };
