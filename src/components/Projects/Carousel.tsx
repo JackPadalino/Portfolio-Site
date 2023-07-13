@@ -71,7 +71,7 @@ const Carousel = () => {
     <div className="carouselMainContainer">
       <div className="carouselImageDataContainer">
         <div className="carouselImageContainer">
-          <img className="carouselmage" src={items[activeIndex].icon} />
+          <img className="carouselImage" src={items[activeIndex].icon} />
         </div>
         <div className="carouselDataContainer">
           <div className="carouselTitleDescriptionContainer">
@@ -126,57 +126,6 @@ const Carousel = () => {
           <span className="material-symbols-outlined">arrow_forward_ios</span>
         </button>
       </div>
-
-      {/* <div className="carouselImgContainer">
-        <img className="carousel-img" src={items[activeIndex].icon} />
-        <div className="itemData">
-          <div className="carouselText">
-            <p className="itemTitle">{items[activeIndex].title}</p>
-            <p className="itemDescription">{items[activeIndex].description}</p>
-            <p className="itemStackLabel">Tech Stack</p>
-            <ul className="itemStack">
-              {items[activeIndex].tech.map((thing) => (
-                <li className="itemTech">{thing}</li>
-              ))}
-            </ul>
-          </div>
-          <div className="itemLinks">
-            <a
-              target="_blank"
-              className="itemLink"
-              href={items[activeIndex].gitHub}
-            >
-              GitHub &rarr;
-            </a>
-            <a
-              target="_blank"
-              className="itemLink"
-              href={items[activeIndex].video}
-            >
-              Video &rarr;
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="carouselButtonsContainer">
-        <button
-          className="button-arrow"
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
-        >
-          <span className="material-symbols-outlined">arrow_back_ios</span>
-        </button>
-        <button
-          className="button-arrow"
-          onClick={() => {
-            updateIndex(activeIndex + 1);
-          }}
-        >
-          <span className="material-symbols-outlined">arrow_forward_ios</span>
-        </button>
-      </div> */}
     </div>
   );
 };
