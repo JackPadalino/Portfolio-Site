@@ -1,12 +1,14 @@
 import { useRef, useState, useEffect } from "react";
-import driveInSign from "../../../images/graphics/driveInSign.png";
+import driveInSign1 from "../../../images/graphics/driveInSign.png";
+import driveInSign2 from "../../../images/graphics/driveInSign3.png";
 import projectsCurtain from "../../../images/graphics/projectsCurtain2.png";
 import Carousel from "./Carousel";
 import "./Projects.css";
 
 const Projects = () => {
   const [curtainOpen, setCurtainOpen] = useState(false);
-  const driveInRef = useRef<HTMLImageElement>(null);
+  const driveInRef1 = useRef<HTMLImageElement>(null);
+  const driveInRef2 = useRef<HTMLImageElement>(null);
   const carouselRef = useRef<HTMLImageElement>(null);
   const curtainRef = useRef<HTMLImageElement>(null);
 
@@ -25,7 +27,6 @@ const Projects = () => {
         entry.target.classList.add("carouselTranslate");
       }
       if (entry.target.classList.contains("curtain__panel")) {
-        console.log("I see ze curtain!");
         setCurtainOpen(true);
       }
       observer.unobserve(entry.target);
@@ -60,8 +61,11 @@ const Projects = () => {
       observerCallback,
       curtainOptions
     );
-    if (driveInRef.current) {
-      driveInObserver.observe(driveInRef.current as Element);
+    if (driveInRef1.current) {
+      driveInObserver.observe(driveInRef1.current as Element);
+    }
+    if (driveInRef2.current) {
+      driveInObserver.observe(driveInRef2.current as Element);
     }
     if (carouselRef.current) {
       carouselObserver.observe(carouselRef.current as Element);
@@ -74,14 +78,18 @@ const Projects = () => {
   return (
     <div id="projectsMainContainer">
       <div id="projectsSignContainer">
-        {/* <div> */}
         <img
-          id="driveInSign"
+          id="driveInSign2"
           className="driveInStart"
-          ref={driveInRef}
-          src={driveInSign}
+          ref={driveInRef2}
+          src={driveInSign2}
         />
-        {/* </div> */}
+        <img
+          id="driveInSign1"
+          className="driveInStart"
+          ref={driveInRef1}
+          src={driveInSign1}
+        />
       </div>
       <div id="projectsCurtainCarouselContainer">
         <div className="curtain">
