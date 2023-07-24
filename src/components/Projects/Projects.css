@@ -3,7 +3,7 @@
   #projectsMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 100px;
   }
 
   #projectsSignContainer {
@@ -20,9 +20,13 @@
     height: 100vh;
   }
 
-  #driveInSign {
+  #driveInSign1 {
+    display: none;
+  }
+
+  #driveInSign2 {
     height: 80%;
-    width: 50%;
+    width: 100%;
   }
 
   .driveInStart {
@@ -102,7 +106,7 @@
   #projectsMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 100px;
   }
 
   #projectsSignContainer {
@@ -119,9 +123,13 @@
     height: 100vh;
   }
 
-  #driveInSign {
-    height: 325px;
-    width: 325px;
+  #driveInSign1 {
+    display: none;
+  }
+
+  #driveInSign2 {
+    height: 80%;
+    width: 100%;
   }
 
   .driveInStart {
@@ -212,7 +220,7 @@
   #projectsMainContainer {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 100px;
   }
 
   #projectsSignContainer {
@@ -230,9 +238,13 @@
     height: 100vh;
   }
 
-  #driveInSign {
-    height: 350px;
-    width: 350px;
+  #driveInSign1 {
+    height: 50%;
+    width: 90%;
+  }
+
+  #driveInSign2 {
+    display: none;
   }
 
   .driveInStart {

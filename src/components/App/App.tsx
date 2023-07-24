@@ -1,4 +1,4 @@
-import { Nav, Home, About, Projects, Resume, Contact } from "..";
+import { Nav, Home, About, Projects, Resume, Contact, Footer } from "..";
 import "./App.css";
 
 const App = () => {
@@ -8,8 +8,9 @@ const App = () => {
       <Home />
       <About />
       <Projects />
-      <Resume />
-      <Contact />
+      {/* <Resume />
+      <Contact /> */}
+      <Footer />
     </div>
   );
 };
