@@ -95,14 +95,14 @@ const Carousel = () => {
                 className="itemLink"
                 href={items[activeIndex].gitHub}
               >
-                GitHub &rarr;
+                GitHub;
               </a>
               <a
                 target="_blank"
                 className="itemLink"
                 href={items[activeIndex].video}
               >
-                Video &rarr;
+                Video;
               </a>
             </div>
           </div>
