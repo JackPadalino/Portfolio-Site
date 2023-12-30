@@ -23,7 +23,7 @@ const items: ItemType[] = [
     title: "CS Classroom",
     description:
       "Python Django application that allows for better classroom collaboration and communication",
-    tech: ["Python", "Django", "HTML", "CSS"],
+    tech: ["Python", "Django","Django Rest Framework", "HTML", "CSS"],
     gitHub: "https://github.com/JackPadalino/AMSCSApp",
     video: "#",
     icon: ams,
