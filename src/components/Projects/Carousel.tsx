@@ -22,8 +22,7 @@ export interface ItemType {
 const items: ItemType[] = [
   {
     title: "Multiple Expressions",
-    description:
-      "Full stack application for posting and live streaming DJ sets",
+    description: "Django and React app for posting and live streaming DJ sets",
     tech: ["Django", "Django Rest Framework", "React", "AWS"],
     link: "https://multiple-expressions.onrender.com/",
     video: "#",
@@ -31,18 +30,16 @@ const items: ItemType[] = [
   },
   {
     title: "CS Classroom",
-    description:
-      "Python Django application that allows for better classroom collaboration and communication",
-    tech: ["Django", "Django Rest Framework", "AWS"],
+    description: "Django app that improves HS classroom collaboration and comm",
+    tech: ["Django", "Django Rest Framework", "AWS", "HTML/CSS"],
     link: "https://github.com/JackPadalino/AMSCSApp",
     video: "#",
     icon: ams,
   },
   {
     title: "Limit",
-    description:
-      "Single page application that allows users to track their spending and set goals",
-    tech: ["ExpressJS", "ReactJS", "React/Redux", "PostgreSQL", "TypeScript"],
+    description: "Full stack app for tracking user spending and setting goals",
+    tech: ["ExpressJS", "ReactJS", "PostgreSQL", "TypeScript"],
     link: "https://github.com/2208-Capstone-Team-3/limit-planner",
     video: "https://www.youtube.com/watch?v=IrHuUIg49OY",
     icon: limit,
@@ -50,13 +47,42 @@ const items: ItemType[] = [
   {
     title: "School Admin",
     description:
-      "Single page application to help NYC school admin to track staff attendance",
+      "Full Stack app to help NYC school admin track staff attendance",
     tech: ["ExpressJS", "ReactJS", "React/Redux", "PostgreSQL"],
     link: "https://github.com/JackPadalino/TeacherAttendanceApp",
     video: "https://www.youtube.com/watch?v=xYJgEmK5XcQ",
     icon: ams,
   },
 ];
+
+// // Validation function for ItemType
+// function validateItemType(item: ItemType): string[] {
+//   const errors: string[] = [];
+
+//   if (item.tech.length !== 4) {
+//     errors.push(`Tech array for item "${item.title}" should have 4 elements.`);
+//   }
+
+//   if (item.description.length !== 60) {
+//     errors.push(
+//       `Description for item "${item.title}" should have a length of 60 characters. Currently has a length of ${item.description.length}`
+//     );
+//   }
+
+//   return errors;
+// }
+
+// // Validate all items
+// items.forEach((item) => {
+//   const validationErrors = validateItemType(item);
+
+//   if (validationErrors.length > 0) {
+//     console.error(
+//       `Validation errors for item "${item.title}":\n`,
+//       validationErrors.join("\n")
+//     );
+//   }
+// });
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -85,8 +111,10 @@ const Carousel = () => {
             <div className="carouselStackContainer">
               <p className="projectStackLabel">Tech Stack</p>
               <ul className="projectStackContainer">
-                {items[activeIndex].tech.map((thing) => (
-                  <li className="projectTechItem">{thing}</li>
+                {items[activeIndex].tech.map((item, index) => (
+                  <li key={index} className="projectTechItem">
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
