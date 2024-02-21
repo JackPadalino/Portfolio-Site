@@ -1,10 +1,10 @@
-#home-container {
+#homeMainContainer {
   height: 100vh;
   width: 100vw;
   background-color: #ebd5b8;
 }
 
-#home-info {
+#homeInfoContainer {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,16 +12,16 @@
   transform: translate(-50%, -50%);
 }
 
-.home-info {
+.homeInfoText {
   text-align: center;
 }
 
-#home-name {
+#homeName {
   font-family: Wagoon;
   font-size: 120px;
 }
 
-#home-title {
+#homeTitle {
   font-family: Airstream;
   font-size: 50px;
 }
@@ -37,29 +37,13 @@
   height: 30px;
 }
 
+/* css for mobile portrait view */
 @media only screen and (max-width: 600px) {
-  #home-name {
+  #homeName {
     font-size: 90px;
   }
 
-  #home-title {
+  #homeTitle {
     font-size: 25px;
   }
 }
-
-/* @media only screen and (min-width: 600px) and (max-width: 900px) {
-  .app {
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100vh;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  .app {
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    height: 100vh;
-  }
-} */
