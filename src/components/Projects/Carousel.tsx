@@ -23,7 +23,7 @@ const items: ItemType[] = [
     title: "CS Classroom",
     description:
       "Python Django application that allows for better classroom collaboration and communication",
-    tech: ["Python", "Django", "Django Rest Framework", "HTML", "CSS"],
+    tech: ["Django", "Django Rest Framework", "AWS"],
     gitHub: "https://github.com/JackPadalino/AMSCSApp",
     video: "#",
     icon: ams,
@@ -32,14 +32,7 @@ const items: ItemType[] = [
     title: "Limit",
     description:
       "Single page application that allows users to track their spending and set goals",
-    tech: [
-      "ExpressJS",
-      "ReactJS",
-      "TypeScript",
-      "Node",
-      "React/Redux",
-      "PostgreSQL",
-    ],
+    tech: ["ExpressJS", "ReactJS", "React/Redux", "PostgreSQL", "TypeScript"],
     gitHub: "https://github.com/2208-Capstone-Team-3/limit-planner",
     video: "https://www.youtube.com/watch?v=IrHuUIg49OY",
     icon: limit,
@@ -48,7 +41,7 @@ const items: ItemType[] = [
     title: "School Admin",
     description:
       "Single page application to help NYC school admin to track staff attendance",
-    tech: ["ExpressJS", "ReactJS", "Node", "React/Redux", "PostgreSQL"],
+    tech: ["ExpressJS", "ReactJS", "React/Redux", "PostgreSQL"],
     gitHub: "https://github.com/JackPadalino/TeacherAttendanceApp",
     video: "https://www.youtube.com/watch?v=xYJgEmK5XcQ",
     icon: attendance,

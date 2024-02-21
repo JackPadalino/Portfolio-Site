@@ -3,11 +3,6 @@
   #driveInSign1 {
     display: none;
   }
-
-  #driveInSign2 {
-    height: 80%;
-    width: 100%;
-  }
 }
 
 /*~~~~~CSS for mobile landscape view~~~~~*/
@@ -15,28 +10,18 @@
   #driveInSign1 {
     display: none;
   }
-
-  #driveInSign2 {
-    height: 80%;
-    width: 100%;
-  }
 }
 
 /*~~~~~CSS for mobile portrait view~~~~~*/
 @media only screen and (max-width: 600px) {
-  #driveInSign1 {
-    height: 50%;
-    width: 90%;
-  }
-
   #driveInSign2 {
     display: none;
   }
 }
 
 #driveInMainContainer {
-  height: 100vh;
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -58,4 +43,13 @@
   to {
     opacity: 1;
   }
+}
+
+#driveInSign1 {
+  height: 45%;
+}
+
+#driveInSign2 {
+  height: 80%;
+  width: 100%;
 }
