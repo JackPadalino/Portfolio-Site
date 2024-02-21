@@ -1,12 +1,16 @@
 /*~~~~~CSS for desktop view~~~~~*/
 @media only screen and (min-width: 900px) {
+  #aboutMainContainer {
+    padding-left: 15px;
+  }
+
   .aboutContainer {
     width: 50%;
   }
 
   #meImg {
     height: 70%;
-    height: 70%;
+    width: 70%;
   }
 
   #aboutMeText {
@@ -32,14 +36,18 @@
 }
 
 /*~~~~~CSS for landscape mobile view~~~~~*/
-@media only screen and (min-width: 600px) and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width: 930px) {
+  #aboutMainContainer {
+    padding-left: 5px;
+  }
+
   .aboutContainer {
     width: 50%;
   }
 
   #meImg {
     height: 70%;
-    height: 70%;
+    width: 70%;
   }
 
   #aboutMeText {
@@ -68,6 +76,7 @@
 @media only screen and (max-width: 600px) {
   #aboutMainContainer {
     flex-direction: column;
+    gap: 10px;
   }
 
   .aboutContainer {
@@ -75,12 +84,12 @@
   }
 
   #meImg {
-    height: 95%;
-    height: 95%;
+    height: 45%;
+    width: 90%;
   }
 
   #aboutMeText {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .about_me-left-start {
@@ -103,6 +112,8 @@
 
 #aboutMainContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
