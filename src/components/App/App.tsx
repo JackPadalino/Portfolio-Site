@@ -1,4 +1,13 @@
-import { Nav, Home, About, Projects, Resume, Contact, Footer } from "..";
+import {
+  Nav,
+  Home,
+  About,
+  DriveIn,
+  Projects,
+  Resume,
+  Contact,
+  Footer,
+} from "..";
 import "./App.css";
 
 const App = () => {
@@ -7,6 +16,7 @@ const App = () => {
       <Nav />
       <Home />
       <About />
+      <DriveIn />
       <Projects />
       {/* <Resume />
       <Contact /> */}

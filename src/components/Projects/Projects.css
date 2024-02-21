@@ -20,36 +20,6 @@
     height: 100vh;
   }
 
-  #driveInSign1 {
-    display: none;
-  }
-
-  #driveInSign2 {
-    height: 80%;
-    width: 100%;
-  }
-
-  .driveInStart {
-    opacity: 0;
-  }
-
-  .driveInTranslate {
-    animation-name: driveInTranslateAnimation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes driveInTranslateAnimation {
-    from {
-      /* transform: translateX(-200px); */
-      opacity: 0;
-    }
-    to {
-      /* transform: translateX(0); */
-      opacity: 1;
-    }
-  }
-
   /* .carouselStart {
     opacity: 0;
   }
@@ -121,36 +91,6 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-  }
-
-  #driveInSign1 {
-    display: none;
-  }
-
-  #driveInSign2 {
-    height: 80%;
-    width: 100%;
-  }
-
-  .driveInStart {
-    opacity: 0;
-  }
-
-  .driveInTranslate {
-    animation-name: driveInTranslateAnimation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes driveInTranslateAnimation {
-    from {
-      /* transform: translateX(-200px); */
-      opacity: 0;
-    }
-    to {
-      /* transform: translateX(0); */
-      opacity: 1;
-    }
   }
 
   /* .carouselStart {
@@ -236,36 +176,6 @@
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-  }
-
-  #driveInSign1 {
-    height: 50%;
-    width: 90%;
-  }
-
-  #driveInSign2 {
-    display: none;
-  }
-
-  .driveInStart {
-    opacity: 0;
-  }
-
-  .driveInTranslate {
-    animation-name: driveInTranslateAnimation;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes driveInTranslateAnimation {
-    from {
-      /* transform: translateX(-200px); */
-      opacity: 0;
-    }
-    to {
-      /* transform: translateX(0); */
-      opacity: 1;
-    }
   }
 
   /* .carouselStart {

@@ -1,0 +1,61 @@
+/*~~~~~CSS for desktop view~~~~~*/
+@media only screen and (min-width: 900px) {
+  #driveInSign1 {
+    display: none;
+  }
+
+  #driveInSign2 {
+    height: 80%;
+    width: 100%;
+  }
+}
+
+/*~~~~~CSS for mobile landscape view~~~~~*/
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  #driveInSign1 {
+    display: none;
+  }
+
+  #driveInSign2 {
+    height: 80%;
+    width: 100%;
+  }
+}
+
+/*~~~~~CSS for mobile portrait view~~~~~*/
+@media only screen and (max-width: 600px) {
+  #driveInSign1 {
+    height: 50%;
+    width: 90%;
+  }
+
+  #driveInSign2 {
+    display: none;
+  }
+}
+
+#driveInMainContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.driveInStart {
+  opacity: 0;
+}
+
+.driveInTranslate {
+  animation-name: driveInTranslateAnimation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes driveInTranslateAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

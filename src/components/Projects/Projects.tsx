@@ -1,14 +1,10 @@
 import { useRef, useState, useEffect } from "react";
-import driveInSign1 from "../../../images/graphics/driveInSign.png";
-import driveInSign2 from "../../../images/graphics/driveInSign3.png";
 import projectsCurtain from "../../../images/graphics/projectsCurtain2.png";
 import Carousel from "./Carousel";
 import "./Projects.css";
 
 const Projects = () => {
   const [curtainOpen, setCurtainOpen] = useState(false);
-  const driveInRef1 = useRef<HTMLImageElement>(null);
-  const driveInRef2 = useRef<HTMLImageElement>(null);
   const carouselRef = useRef<HTMLImageElement>(null);
   const curtainRef = useRef<HTMLImageElement>(null);
 
@@ -18,10 +14,6 @@ const Projects = () => {
   ) => {
     const entry = entries[0];
     if (entry.isIntersecting) {
-      if (entry.target.classList.contains("driveInStart")) {
-        entry.target.classList.remove("driveInStart");
-        entry.target.classList.add("driveInTranslate");
-      }
       if (entry.target.classList.contains("carouselStart")) {
         entry.target.classList.remove("carouselStart");
         entry.target.classList.add("carouselTranslate");
@@ -31,11 +23,6 @@ const Projects = () => {
       }
       observer.unobserve(entry.target);
     }
-  };
-
-  const driveInOptions = {
-    root: null,
-    threshold: 0.5,
   };
 
   const carouselOptions = {
@@ -49,10 +36,6 @@ const Projects = () => {
   };
 
   useEffect(() => {
-    const driveInObserver = new IntersectionObserver(
-      observerCallback,
-      driveInOptions
-    );
     const carouselObserver = new IntersectionObserver(
       observerCallback,
       carouselOptions
@@ -61,12 +44,7 @@ const Projects = () => {
       observerCallback,
       curtainOptions
     );
-    if (driveInRef1.current) {
-      driveInObserver.observe(driveInRef1.current as Element);
-    }
-    if (driveInRef2.current) {
-      driveInObserver.observe(driveInRef2.current as Element);
-    }
+
     if (carouselRef.current) {
       carouselObserver.observe(carouselRef.current as Element);
     }
@@ -77,20 +55,6 @@ const Projects = () => {
 
   return (
     <div id="projectsMainContainer">
-      <div id="projectsSignContainer">
-        <img
-          id="driveInSign2"
-          className="driveInStart"
-          ref={driveInRef2}
-          src={driveInSign2}
-        />
-        <img
-          id="driveInSign1"
-          className="driveInStart"
-          ref={driveInRef1}
-          src={driveInSign1}
-        />
-      </div>
       <div id="projectsCurtainCarouselContainer">
         <div className="curtain">
           <img
