@@ -23,7 +23,7 @@ const items: ItemType[] = [
     title: "CS Classroom",
     description:
       "Python Django application that allows for better classroom collaboration and communication",
-    tech: ["Python", "Django","Django Rest Framework", "HTML", "CSS"],
+    tech: ["Python", "Django", "Django Rest Framework", "HTML", "CSS"],
     gitHub: "https://github.com/JackPadalino/AMSCSApp",
     video: "#",
     icon: ams,
@@ -70,9 +70,7 @@ const Carousel = () => {
   return (
     <div className="carouselMainContainer">
       <div className="carouselImageDataContainer">
-        <div className="carouselImageContainer">
-          <img className="carouselImage" src={items[activeIndex].icon} />
-        </div>
+        <img className="carouselImage" src={items[activeIndex].icon} />
         <div className="carouselDataContainer">
           <div className="carouselTitleDescriptionContainer">
             <p className="projectTitle">{items[activeIndex].title}</p>

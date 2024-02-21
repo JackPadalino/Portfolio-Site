@@ -39,6 +39,7 @@
   position: relative; /* need to define the z-index */
   z-index: 2; /* places the panels in front of the "prize" */
   transition: all 4s ease-out;
+  display: none;
 }
 
 .curtain__panel--left {
