@@ -33,19 +33,19 @@ const About = () => {
 
   return (
     <div id="aboutMainContainer">
-      <div id="aboutLeftContainer">
+      <div className="aboutContainer">
         <img
           ref={meRef}
           src={me}
-          id="me"
+          id="meImg"
           className={
             aboutMe ? "about_me about_me-left" : "about_me about_me-left-start"
           }
         />
       </div>
-      <div id="aboutRightContainer">
+      <div className="aboutContainer">
         <p
-          id="aboutMe"
+          id="aboutMeText"
           className={
             aboutMe
               ? "about_me about_me-right"
