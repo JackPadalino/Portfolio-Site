@@ -5,6 +5,7 @@ import mindfullness from "./images/mindfullness.svg";
 import coffee from "./images/coffee.svg";
 import ams from "../../../images/pictures/ams.png";
 import limit from "../../../images/pictures/limit.png";
+import mult from "../../../images/pictures/mult.jpeg";
 import attendance from "../../../images/pictures/attendance.png";
 import underConstruction from "../../../images/graphics/underConstruction.png";
 import "./Carousel.css";
@@ -13,18 +14,27 @@ export interface ItemType {
   title: string;
   description: string;
   tech: string[];
-  gitHub: string;
+  link: string;
   video: string;
   icon: string;
 }
 
 const items: ItemType[] = [
   {
+    title: "Multiple Expressions",
+    description:
+      "Full stack application for posting and live streaming DJ sets",
+    tech: ["Django", "Django Rest Framework", "React", "AWS"],
+    link: "https://multiple-expressions.onrender.com/",
+    video: "#",
+    icon: mult,
+  },
+  {
     title: "CS Classroom",
     description:
       "Python Django application that allows for better classroom collaboration and communication",
     tech: ["Django", "Django Rest Framework", "AWS"],
-    gitHub: "https://github.com/JackPadalino/AMSCSApp",
+    link: "https://github.com/JackPadalino/AMSCSApp",
     video: "#",
     icon: ams,
   },
@@ -33,7 +43,7 @@ const items: ItemType[] = [
     description:
       "Single page application that allows users to track their spending and set goals",
     tech: ["ExpressJS", "ReactJS", "React/Redux", "PostgreSQL", "TypeScript"],
-    gitHub: "https://github.com/2208-Capstone-Team-3/limit-planner",
+    link: "https://github.com/2208-Capstone-Team-3/limit-planner",
     video: "https://www.youtube.com/watch?v=IrHuUIg49OY",
     icon: limit,
   },
@@ -42,9 +52,9 @@ const items: ItemType[] = [
     description:
       "Single page application to help NYC school admin to track staff attendance",
     tech: ["ExpressJS", "ReactJS", "React/Redux", "PostgreSQL"],
-    gitHub: "https://github.com/JackPadalino/TeacherAttendanceApp",
+    link: "https://github.com/JackPadalino/TeacherAttendanceApp",
     video: "https://www.youtube.com/watch?v=xYJgEmK5XcQ",
-    icon: attendance,
+    icon: ams,
   },
 ];
 
@@ -84,9 +94,9 @@ const Carousel = () => {
               <a
                 target="_blank"
                 className="itemLink"
-                href={items[activeIndex].gitHub}
+                href={items[activeIndex].link}
               >
-                GitHub;
+                Link;
               </a>
               <a
                 target="_blank"
