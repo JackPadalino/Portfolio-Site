@@ -78,16 +78,16 @@ const Carousel = () => {
               {items[activeIndex].description}
             </p>
           </div>
-          <div className="carouselStackLinks">
+          <div className="carouselStackLinksContainer">
             <div className="carouselStackContainer">
               <p className="projectStackLabel">Tech Stack</p>
-              <ul className="projectStack">
+              <ul className="projectStackContainer">
                 {items[activeIndex].tech.map((thing) => (
-                  <li className="projectTech">{thing}</li>
+                  <li className="projectTechItem">{thing}</li>
                 ))}
               </ul>
             </div>
-            <div className="carouselLinks">
+            <div className="carouselLinksContainer">
               <a
                 target="_blank"
                 className="itemLink"

@@ -1,5 +1,9 @@
 /*~~~~~CSS for desktop view~~~~~*/
 @media only screen and (min-width: 900px) {
+  .projectTitle {
+    font-size: 30px;
+  }
+
   .carouselImage {
     height: 70%;
     width: auto;
@@ -10,13 +14,21 @@
     width: 35%;
   }
 
-  .carouselLinks a:hover {
+  .carouselLinksContainer a:hover {
     text-decoration: underline;
+  }
+
+  .carouselStackLinksContainer {
+    flex-direction: row;
   }
 }
 
 /*~~~~~CSS for mobile landscape view~~~~~*/
 @media only screen and (min-width: 600px) and (max-width: 900px) {
+  .projectTitle {
+    font-size: 20px;
+  }
+
   .carouselImage {
     height: 70%;
     width: auto;
@@ -26,10 +38,18 @@
     height: 70%;
     width: 35%;
   }
+
+  .carouselStackLinksContainer {
+    flex-direction: row;
+  }
 }
 
 /*~~~~~CSS for mobile portrait view~~~~~*/
 @media only screen and (max-width: 600px) {
+  .projectTitle {
+    font-size: 20px;
+  }
+
   .carouselImageDataContainer {
     flex-direction: column;
   }
@@ -41,7 +61,11 @@
 
   .carouselDataContainer {
     height: auto;
-    width: 60%;
+    width: 70%;
+  }
+
+  .carouselStackLinksContainer {
+    flex-direction: column;
   }
 }
 
@@ -65,24 +89,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 .carouselImageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
 }
 
 .carouselDataContainer {
-  border: 1px solid purple;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .projectTitle {
   font-family: Goldsaber;
   color: #f8cb2e;
-  font-size: 15px;
 }
 
 .projectDescription {
@@ -90,7 +113,12 @@
   font-family: Wabene;
 }
 
-.carouselStackLinks {
+.carouselStackLinksContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.carouselLinksContainer {
   display: flex;
   flex-direction: column;
 }
@@ -101,21 +129,16 @@
   color: #006e7f;
 }
 
-.projectStack {
+.projectStackContainer {
   margin-left: 15px;
 }
 
-.projectTech {
+.projectTechItem {
   font-family: Wabene;
   font-size: 15px;
 }
 
-.carouselLinks {
-  display: flex;
-  flex-direction: column;
-}
-
-.carouselLinks a {
+.carouselLinksContainer a {
   width: fit-content;
   height: fit-content;
   color: #ee5007;
