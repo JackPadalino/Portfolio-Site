@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import me from "../../../images/pictures/me2.jpg";
+import me from "../../../images/pictures/me3.jpg";
 import "./About.css";
 
 const About = () => {
