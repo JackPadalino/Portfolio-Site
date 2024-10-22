@@ -42,6 +42,7 @@ const Home = () => {
     () => Math.random() * 3
   );
 
+  randomDelays.splice(5, 1, 3);
   return (
     <div id="homeMainContainer">
       <Banner />
@@ -71,7 +72,7 @@ const Home = () => {
           animate={{
             rotate: [0, -45, 360],
           }}
-          transition={{ delay: 3, duration: 0.75 }}
+          transition={{ delay: 3.1, duration: 0.75 }}
         >
           Full-Stack Developer
         </motion.p>
