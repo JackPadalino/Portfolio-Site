@@ -1,3 +1,66 @@
+/* breakpoint for mobile portrait view */
+@media only screen and (max-width: 600px) {
+  #homeInfoContainer {
+    top: 35%;
+  }
+
+  #homeName {
+    font-size: 90px;
+  }
+
+  #homeTitle {
+    font-size: 40px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* breakpoint for mobile landscape view */
+@media only screen and (min-width: 600px) and (max-width: 1280px) {
+  #homeInfoContainer {
+    top: 35%;
+  }
+
+  #homeName {
+    font-size: 90px;
+  }
+
+  #homeTitle {
+    font-size: 40px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* breakpoint for laptop/desktop view */
+@media only screen and (min-width: 1280px) {
+  #homeInfoContainer {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+  }
+
+  #homeName {
+    font-size: 150px;
+  }
+
+  #homeTitle {
+    font-size: 50px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* css for all views  */
 #homeMainContainer {
   height: 100vh;
   width: 100vw;
@@ -6,10 +69,7 @@
 
 #homeInfoContainer {
   position: absolute;
-  top: 50%;
-  left: 50%;
   width: 100%;
-  transform: translate(-50%, -50%);
 }
 
 .homeInfoText {
@@ -18,32 +78,14 @@
 
 #homeName {
   font-family: Wagoon;
-  font-size: 120px;
 }
 
 #homeTitle {
   font-family: Airstream;
-  font-size: 50px;
 }
 
 #iconsDiv {
   display: flex;
   justify-content: center;
   gap: 10px;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-}
-
-/* css for mobile portrait view */
-@media only screen and (max-width: 600px) {
-  #homeName {
-    font-size: 90px;
-  }
-
-  #homeTitle {
-    font-size: 25px;
-  }
 }
