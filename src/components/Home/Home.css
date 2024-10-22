@@ -4,8 +4,8 @@
     top: 35%;
   }
 
-  #homeName {
-    font-size: 90px;
+  .homeName {
+    font-size: 55px;
   }
 
   #homeTitle {
@@ -24,8 +24,8 @@
     top: 35%;
   }
 
-  #homeName {
-    font-size: 90px;
+  .homeName {
+    font-size: 75px;
   }
 
   #homeTitle {
@@ -41,12 +41,10 @@
 /* breakpoint for laptop/desktop view */
 @media only screen and (min-width: 1280px) {
   #homeInfoContainer {
-    position: absolute;
     top: 40%;
-    width: 100%;
   }
 
-  #homeName {
+  .homeName {
     font-size: 150px;
   }
 
@@ -67,8 +65,16 @@
   background-color: #ebd5b8;
 }
 
+#homeNameContainer {
+  display: flex;
+}
+
 #homeInfoContainer {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -76,7 +82,7 @@
   text-align: center;
 }
 
-#homeName {
+.homeName {
   font-family: Wagoon;
 }
 
