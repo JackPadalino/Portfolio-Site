@@ -2,7 +2,6 @@
 @media only screen and (max-width: 600px) {
   #aboutMainContainer {
     flex-direction: column;
-    gap: 10px;
   }
 
   #meImg {
@@ -11,7 +10,9 @@
   }
 
   #aboutMeText {
-    font-size: 30px;
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
   }
 }
 
@@ -23,7 +24,9 @@
   }
 
   #aboutMeText {
-    font-size: 30px;
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
   }
 }
 
@@ -35,16 +38,19 @@
   }
 
   #aboutMeText {
-    font-size: 45px;
+    font-size: 35px;
+    width: 50%;
+    text-align: end;
   }
 }
 
 #aboutMainContainer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
-  padding: 10px;
+  overflow: hidden;
+  gap: 10px;
 }
 
 #meImg {
@@ -52,6 +58,6 @@
 }
 
 #aboutMeText {
-  text-align: center;
+  /* text-align: center; */
   font-family: Wagoon;
 }

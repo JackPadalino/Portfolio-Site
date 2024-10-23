@@ -45,7 +45,7 @@ const Home = () => {
   randomDelays.splice(5, 1, 3);
   return (
     <div id="homeMainContainer">
-      <Banner />
+      {/* <Banner /> */}
       <div id="homeInfoContainer">
         <motion.div
           id="homeNameContainer"

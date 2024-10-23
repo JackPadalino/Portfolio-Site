@@ -1,9 +1,5 @@
 /* breakpoint for mobile portrait view */
 @media only screen and (max-width: 600px) {
-  #homeInfoContainer {
-    top: 35%;
-  }
-
   .homeName {
     font-size: 55px;
   }
@@ -20,10 +16,6 @@
 
 /* breakpoint for mobile landscape view */
 @media only screen and (min-width: 600px) and (max-width: 1280px) {
-  #homeInfoContainer {
-    top: 35%;
-  }
-
   .homeName {
     font-size: 75px;
   }
@@ -40,10 +32,6 @@
 
 /* breakpoint for laptop/desktop view */
 @media only screen and (min-width: 1280px) {
-  #homeInfoContainer {
-    top: 40%;
-  }
-
   .homeName {
     font-size: 150px;
   }
@@ -60,9 +48,8 @@
 
 /* css for all views  */
 #homeMainContainer {
+  display: flex;
   height: 100vh;
-  width: 100vw;
-  background-color: #ebd5b8;
 }
 
 #homeNameContainer {
@@ -70,12 +57,12 @@
 }
 
 #homeInfoContainer {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .homeInfoText {

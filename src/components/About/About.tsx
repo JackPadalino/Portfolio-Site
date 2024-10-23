@@ -51,7 +51,7 @@ const About = () => {
         ref={ref}
         src={me}
         id="meImg"
-        initial={{ x: -300, scale: 0.8, opacity: 0 }}
+        initial={{ x: -100, scale: 0.8, opacity: 0 }}
         animate={controls}
         transition={{ type: 'spring', duration: 2 }}
       />
@@ -59,13 +59,14 @@ const About = () => {
       <motion.p
         ref={ref}
         id="aboutMeText"
-        initial={{ x: 300, scale: 0.8, opacity: 0 }}
+        initial={{ x: 100, scale: 0.8, opacity: 0 }}
         animate={controls}
         transition={{ type: 'spring', duration: 2 }}
       >
-        Pleasure to meet you! I'm Jack, a full stack software engineer eager to
-        take on exciting and complex projects alongside a talented and
-        supportive team.
+        Pleasure to meet you! I'm Jack, a Full stack Software Engineer who
+        enjoys both front-end and full-stack development. Let's connect to
+        explore how I can bring my passion for innovation and tackling complex
+        problems to your team.
       </motion.p>
     </div>
   );
