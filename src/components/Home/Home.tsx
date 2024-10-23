@@ -58,7 +58,7 @@ const Home = () => {
     }
   }, [isAnimating]);
 
-  randomDelays.splice(5, 1, 3);
+  randomDelays.splice(5, 1, 4);
   return (
     <div id="homeMainContainer">
       {/* <Banner /> */}
@@ -88,7 +88,7 @@ const Home = () => {
           animate={{
             rotate: [0, -45, 360],
           }}
-          transition={{ delay: 3.1, duration: 0.75 }}
+          transition={{ delay: 4.1, duration: 1 }}
         >
           Full-Stack Developer
         </motion.p>
@@ -103,7 +103,7 @@ const Home = () => {
               src={linkedIn1}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 4, duration: 0.75 }}
+              transition={{ delay: 5, duration: 0.75 }}
             />
           </a>
           <a href="https://github.com/JackPadalino" target="_blank">
@@ -112,7 +112,7 @@ const Home = () => {
               src={github2}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 4.25, duration: 0.75 }}
+              transition={{ delay: 5.75, duration: 0.75 }}
               onAnimationComplete={handleAnimationComplete}
             />
           </a>
