@@ -4,17 +4,16 @@ import './App.css';
 
 const App = () => {
   return (
-    <div id="appContainer">
-      <img
-        src="../../../images/graphics/background3.jpg"
-        id="appContainerImg"
-      />
-      <Home />
-      <About />
-      <DriveIn />
-      <Projects />
-      <Footer />
-    </div>
+    <>
+      <Banner id="appBackground" />
+      <div id="componentContainer">
+        <Home />
+        <About />
+        {/* <DriveIn /> */}
+        {/* <Projects /> */}
+        <Footer />
+      </div>
+    </>
   );
 };
 
