@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ReactComponent as Banner } from '../../../images/graphics/banner.svg';
 import linkedIn1 from '../../../images/graphics/linkedIn1.png';
@@ -41,6 +42,21 @@ const Home = () => {
     { length: nameArr.length },
     () => Math.random() * 3
   );
+
+  // prevent scrolling until opening animations are complete
+  const [isAnimating, setIsAnimating] = useState<boolean>(true);
+
+  const handleAnimationComplete = () => {
+    setIsAnimating(false);
+  };
+
+  useEffect(() => {
+    if (isAnimating) {
+      document.body.classList.add('noScroll'); // Add class to disable scrolling
+    } else {
+      document.body.classList.remove('noScroll'); // Remove class to enable scrolling
+    }
+  }, [isAnimating]);
 
   randomDelays.splice(5, 1, 3);
   return (
@@ -97,6 +113,7 @@ const Home = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 4.25, duration: 0.75 }}
+              onAnimationComplete={handleAnimationComplete}
             />
           </a>
         </div>
