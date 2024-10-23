@@ -1,73 +1,65 @@
-#appContainer {
-  background-image: url("./images/graphics/background2.jpg");
-}
-
-#root {
-  background-color: #ffffff80;
+@font-face {
+  font-family: 'Airstream';
+  src: local('Airstream'), url('./fonts/Airstream.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Airstream";
-  src: local("Airstream"), url("./fonts/Airstream.woff") format("woff");
+  font-family: 'Mollie';
+  src: local('Mollie'), url('./fonts/Mollie.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Mollie";
-  src: local("Mollie"), url("./fonts/Mollie.ttf") format("truetype");
+  font-family: 'ThickDeco';
+  src: local('ThickDeco'), url('./fonts/ThickDeco.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "ThickDeco";
-  src: local("ThickDeco"), url("./fonts/ThickDeco.ttf") format("truetype");
+  font-family: 'Hastag';
+  src: local('Hastag'), url('./fonts/Hastag.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Hastag";
-  src: local("Hastag"), url("./fonts/Hastag.woff") format("woff");
+  font-family: 'Ava';
+  src: local('Ava'), url('./fonts/Avaneonz.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Ava";
-  src: local("Ava"), url("./fonts/Avaneonz.ttf") format("truetype");
+  font-family: 'Goldsaber';
+  src: local('Goldsaber'), url('./fonts/Goldsaber.ttf') format('opentype');
 }
 
 @font-face {
-  font-family: "Goldsaber";
-  src: local("Goldsaber"), url("./fonts/Goldsaber.ttf") format("opentype");
+  font-family: 'Wabene';
+  src: local('Wabene'), url('./fonts/Wabene.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Wabene";
-  src: local("Wabene"), url("./fonts/Wabene.ttf") format("truetype");
+  font-family: 'Bencolene';
+  src: local('Bencolene'),
+    url('./fonts/Bencolene-Vintage.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Bencolene";
-  src: local("Bencolene"),
-    url("./fonts/Bencolene-Vintage.ttf") format("truetype");
+  font-family: 'Fashion';
+  src: local('Fashion'), url('./fonts/FASHIONV.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Fashion";
-  src: local("Fashion"), url("./fonts/FASHIONV.ttf") format("truetype");
+  font-family: 'Maraton';
+  src: local('Maraton'), url('./fonts/Maraton.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Maraton";
-  src: local("Maraton"), url("./fonts/Maraton.ttf") format("truetype");
+  font-family: 'Fungus';
+  src: local('Fungus'), url('./fonts/Fungus.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Fungus";
-  src: local("Fungus"), url("./fonts/Fungus.ttf") format("truetype");
+  font-family: 'Wetware';
+  src: local('Wetware'), url('./fonts/Wetware.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Wetware";
-  src: local("Wetware"), url("./fonts/Wetware.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Wagoon";
-  src: local("Wagoon"), url("./fonts/WagoonBoldInline.ttf") format("truetype");
+  font-family: 'Wagoon';
+  src: local('Wagoon'), url('./fonts/WagoonBoldInline.ttf') format('truetype');
 }

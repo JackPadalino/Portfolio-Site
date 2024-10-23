@@ -3,7 +3,16 @@
   margin: 0px;
 }
 
-#component-container {
+#appContainer {
   display: flex;
   flex-direction: column;
+  background-color: #ffffff80;
+}
+
+#appContainerImg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
 }
