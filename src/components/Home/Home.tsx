@@ -52,9 +52,9 @@ const Home = () => {
 
   useEffect(() => {
     if (isAnimating) {
-      document.body.classList.add('noScroll'); // Add class to disable scrolling
+      document.body.classList.add('noScroll');
     } else {
-      document.body.classList.remove('noScroll'); // Remove class to enable scrolling
+      document.body.classList.remove('noScroll');
     }
   }, [isAnimating]);
 

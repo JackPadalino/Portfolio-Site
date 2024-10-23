@@ -16,7 +16,8 @@
   position: absolute;
 }
 
+/* class to disable scrolling */
 .noScroll {
-  overflow: hidden; /* Prevents scrolling */
-  height: 100vh; /* Ensures the body takes full height */
+  overflow: hidden;
+  height: 100vh;
 }
