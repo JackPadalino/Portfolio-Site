@@ -9,6 +9,7 @@ const App = () => {
       <div id="componentContainer">
         <Home />
         <About />
+        <Contact />
         {/* <DriveIn /> */}
         {/* <Projects /> */}
         <Footer />

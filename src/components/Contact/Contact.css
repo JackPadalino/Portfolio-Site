@@ -1,6 +1,35 @@
-#contact-container {
+/*~~~~~CSS for portrait mobile view~~~~~*/
+@media only screen and (max-width: 600px) {
+  #contactMeText {
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1280px) {
+  #contactMeText {
+    font-size: 25px;
+    width: 75%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #contactMeText {
+    font-size: 35px;
+    width: 75%;
+    text-align: center;
+  }
+}
+
+#contactMainContainer {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#contactMeText {
+  font-family: Wagoon;
 }
