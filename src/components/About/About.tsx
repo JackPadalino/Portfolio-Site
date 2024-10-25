@@ -63,7 +63,7 @@ const About = () => {
         animate={controls}
         transition={{ type: 'spring', duration: 2 }}
       >
-        Pleasure to meet you! I'm Jack, a eoftware engineer who enjoys both
+        Pleasure to meet you! I'm Jack, a software engineer who enjoys both
         frontend and full stack development.
       </motion.p>
     </div>
