@@ -90,7 +90,7 @@ const Home = () => {
           }}
           transition={{ delay: 4.1, duration: 1 }}
         >
-          Full-Stack Developer
+          Software Engineer
         </motion.p>
 
         <div id="iconsDiv">

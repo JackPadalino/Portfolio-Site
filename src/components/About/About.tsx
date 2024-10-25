@@ -63,10 +63,8 @@ const About = () => {
         animate={controls}
         transition={{ type: 'spring', duration: 2 }}
       >
-        Pleasure to meet you! I'm Jack, a Full stack Software Engineer who
-        enjoys both front-end and full-stack development. Let's connect to
-        explore how I can bring my passion for innovation and tackling complex
-        problems to your team.
+        Pleasure to meet you! I'm Jack, a eoftware engineer who enjoys both
+        frontend and full stack development.
       </motion.p>
     </div>
   );
