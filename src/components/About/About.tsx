@@ -41,7 +41,7 @@ const About = () => {
 
   useEffect(() => {
     if (inView) {
-      controls.start({ x: 0, scale: 1, opacity: 1 }); // Start animation when in view
+      controls.start({ x: 0, scale: 1, opacity: 1 }); // tart animation when in view
     }
   }, [inView, controls]);
 
