@@ -1,11 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { motion } from 'framer-motion';
 import { ReactComponent as Banner } from '../../../images/graphics/banner.svg';
+import { useInView } from 'react-intersection-observer';
+import { AppContext, AppContextType } from '../../context';
 import linkedIn1 from '../../../images/graphics/linkedIn1.png';
 import github2 from '../../../images/graphics/github2.png';
 import './Home.css';
 
 const Home = () => {
+  const { setShowNav } = useContext(AppContext) as AppContextType;
   const nameArr = [
     'J',
     'a',
@@ -58,9 +61,18 @@ const Home = () => {
     }
   }, [isAnimating]);
 
+  const { ref, inView } = useInView({
+    // triggerOnce: true,
+    threshold: 0.1, // Percentage of the image visible before triggering (0.1 = 10%)
+  });
+
+  useEffect(() => {
+    setShowNav(!inView);
+  }, [inView]);
+
   randomDelays.splice(5, 1, 4);
   return (
-    <div id="homeMainContainer">
+    <div id="homeMainContainer" ref={ref}>
       {/* <Banner /> */}
       <div id="homeInfoContainer">
         <motion.div
