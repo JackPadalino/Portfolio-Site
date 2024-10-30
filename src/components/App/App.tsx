@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import {
   Home,
   About,
@@ -15,11 +16,11 @@ import './App.css';
 
 const App = () => {
   const { showNav } = useContext(AppContext) as AppContextType;
-  console.log(showNav);
+
   return (
     <>
       <Banner id="appBackground" />
-      {showNav && <Nav />}
+      <AnimatePresence>{showNav && <Nav />}</AnimatePresence>
       <div id="componentContainer">
         <Home />
         <About />

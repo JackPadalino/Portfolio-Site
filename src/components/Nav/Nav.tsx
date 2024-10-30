@@ -9,8 +9,12 @@ const Nav = () => {
     <motion.div
       id="navMainContainer"
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, rotate: [-25, 25, -25, 0] }}
-      transition={{ duration: 1.5 }}
+      exit={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        rotate: [-25, 25, -25, 0],
+      }}
+      transition={{ duration: 1 }}
     >
       <p id="navTitle">Jack Padalino</p>
       <a
