@@ -53,13 +53,13 @@ const Home = () => {
     setIsAnimating(false);
   };
 
-  // useEffect(() => {
-  //   if (isAnimating) {
-  //     document.body.classList.add('noScroll');
-  //   } else {
-  //     document.body.classList.remove('noScroll');
-  //   }
-  // }, [isAnimating]);
+  useEffect(() => {
+    if (isAnimating) {
+      document.body.classList.add('noScroll');
+    } else {
+      document.body.classList.remove('noScroll');
+    }
+  }, [isAnimating]);
 
   const { ref, inView } = useInView({
     // triggerOnce: true,
@@ -68,7 +68,7 @@ const Home = () => {
 
   useEffect(() => {
     setShowNav(!inView);
-  }, [inView]);
+  }, [inView, setShowNav]);
 
   randomDelays.splice(5, 1, 4);
   return (
